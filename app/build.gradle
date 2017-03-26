@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.yayandroid.locationmanager.sample"
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+    compile project(':library')
+    compile libraries.appCompat
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.android.support:cardview-v7:24.2.0'
+    compile 'com.google.android.gms:play-services:9.6.1'
+    compile 'com.android.support:recyclerview-v7:+'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.3.1'
+}
