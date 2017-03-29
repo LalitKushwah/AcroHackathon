@@ -213,7 +213,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
                 startActivity(i1);
             break;
             case R.id.eatries:
-                Toast.makeText(this, "Bank button clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Eatries button clicked", Toast.LENGTH_SHORT).show();
                 Intent i2=new Intent(MainActivity.this,NearByPlacesActivity.class);
                 i2.putExtra("type","eatries");
                 i2.putExtra("latitude",String.valueOf(latitude));
@@ -221,7 +221,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
                 startActivity(i2);
                 break;
             case R.id.accomodation:
-                Toast.makeText(this, "Hospital button clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Accomodation button clicked", Toast.LENGTH_SHORT).show();
                 Intent i3=new Intent(MainActivity.this,NearByPlacesActivity.class);
                 i3.putExtra("type","hotel");
                 i3.putExtra("latitude",String.valueOf(latitude));

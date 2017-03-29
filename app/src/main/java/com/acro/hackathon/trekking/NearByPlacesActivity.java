@@ -1,9 +1,15 @@
 package com.acro.hackathon.trekking;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 
+import com.acro.hackathon.trekking.POJO.nearByLocation.Result;
+import com.acro.hackathon.trekking.adapter.NearByPlacesList;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.CircleOptions;
@@ -12,6 +18,9 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.acro.hackathon.trekking.POJO.nearByLocation.NearByLocationResponse;
 import com.acro.hackathon.trekking.network.NearByLocation;
+import com.google.android.gms.vision.text.Line;
+
+import java.util.ArrayList;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -23,17 +32,33 @@ public class NearByPlacesActivity extends AppCompatActivity {
 
      String type;
      String latitude,longitude;
-     Double placeLatitude,placeLongitude;
+     RecyclerView recyclerView;
+     LinearLayoutManager lm;
+    NearByPlacesList adapter;
+    ArrayList<String> images=new ArrayList<>();
+    ArrayList<String> name=new ArrayList<>();
+    Context context;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_near_by_places);
+
+        context=NearByPlacesActivity.this;
+        recyclerView=(RecyclerView)findViewById(R.id.nearByPlacerecyclerView);
+        lm=new LinearLayoutManager(NearByPlacesActivity.this);
+        recyclerView.setLayoutManager(lm);
+
+        adapter=new NearByPlacesList(name,images,context);
+        recyclerView.setAdapter(adapter);
+
 
 
         Intent i =getIntent();
         type=i.getStringExtra("type");
         latitude=i.getStringExtra("latitude");
         longitude=i.getStringExtra("longitude");
+
 
 
         Retrofit retrofit = new Retrofit.Builder()
@@ -47,33 +72,22 @@ public class NearByPlacesActivity extends AppCompatActivity {
         nearByLocationResponseCall.enqueue(new Callback<NearByLocationResponse>() {
             @Override
             public void onResponse(Call<NearByLocationResponse> call, Response<NearByLocationResponse> response) {
+                name.clear();
+                images.clear();
+                for(int i=0;i<response.body().getResults().size()-1;i++) {
+                    name.add(response.body().getResults().get(i).getName());
+                    images.add(response.body().getResults().get(i).getReference());
+                }
+                adapter.notifyDataSetChanged();
 
             }
 
             @Override
             public void onFailure(Call<NearByLocationResponse> call, Throwable t) {
-
+                Log.d("failure",t.getMessage());
             }
         });
     }
 
-    @Override
-    public void onMapReady(GoogleMap googleMap) {
-        mMap = googleMap;
-        LatLng sydney = new LatLng(lati,longi);
-        LatLng talawlai =new LatLng((lati+0.05),(longi+0.05));
-        Marker customer= mMap.addMarker(new MarkerOptions().position(sydney)
-                .title("Your Location"));
-        Marker laundary= mMap.addMarker(new MarkerOptions().position(talawlai).title("Employee"));
-        laundary.setIcon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher));
-        laundary.showInfoWindow();
 
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(lati, longi), 11.0f));
-        Circle circle = mMap.addCircle(new CircleOptions()
-                .center(new LatLng(lati, longi))
-                .radius(10000)
-                .strokeColor(Color.GRAY)
-                .fillColor(Color.WHITE)); //Inside color
-
-    }
 }
