@@ -1,63 +1,68 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="#f2f0f0"
+  android:padding="8dp"
+    android:weightSum="16"
     android:id="@+id/lay">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:orientation="horizontal"
         android:gravity="center"
+        android:layout_weight="1"
         android:id="@+id/header">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Loading weather condition..."
+            android:hint="@string/weather_loading"
+            android:textColor="#000"
             android:id="@+id/weatherText" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
         android:orientation="horizontal"
-        android:layout_below="@id/header"
         android:id="@+id/searchEditText">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="search here..."/>
+            android:hint="@string/search_hint"/>
 
 
     </LinearLayout>
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:layout_below="@id/searchEditText"
+        android:layout_weight="10"
         android:layout_width="match_parent"
-        android:layout_height="330dp"
+        android:layout_height="0dp"
         android:id="@+id/map"
         tools:context=".MapsActivity"
         android:name="com.google.android.gms.maps.SupportMapFragment" />
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/map"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
         android:id="@+id/text"
         android:textColor="#000"
-        android:text="Your near by"/>
+        android:text="@string/near_by"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:weightSum="4"
         android:id="@+id/servicesLayout"
         android:orientation="horizontal"
-        android:layout_below="@+id/text"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+      >
 
         <ImageButton
             android:layout_width="0dp"
@@ -67,9 +72,7 @@
             android:onClick="onClick"
             android:background="@drawable/hollow_blue_button"
             android:src="@drawable/ic_business_black_24dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            />
 
         <ImageButton
             android:layout_width="0dp"
@@ -99,26 +102,31 @@
             android:src="@drawable/ic_accomodation"
             android:layout_height="40dp"/>
     </LinearLayout>
+
+
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Emergency services"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/emergency_services"
         android:textColor="#000"
-        android:layout_below="@id/servicesLayout"
-        android:id="@+id/hiddentext"/>
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/hiddenText"/>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/hiddentext"
-        android:layout_alignParentEnd="true"
         android:orientation="horizontal"
         android:weightSum="3"
-        android:layout_alignParentRight="true">
+        >
 
         <Button
             android:layout_width="0dp"
             android:layout_weight="1.4"
-            android:text="Danger"
+            android:text="@string/danger"
+            android:textColor="#000"
             android:background="@drawable/hollow_red_button"
             android:layout_height="wrap_content" />
         <TextView
@@ -129,11 +137,12 @@
         <Button
             android:layout_width="0dp"
             android:layout_weight="1.4"
-            android:text="Medical"
+            android:textColor="#000"
+            android:text="@string/medical"
             android:background="@drawable/hollow_med_button"
             android:layout_height="wrap_content" />
 
 
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

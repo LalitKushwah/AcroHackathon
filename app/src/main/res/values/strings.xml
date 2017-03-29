@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">AcroTrekking</string>
+    <string name="app_name" translatable="true">AcroTrekking</string>
+    <string name="weather_loading" translatable="true">Loading Weather Condition…</string>
+    <string name="search_hint" translatable="true">Search Here…</string>
+    <string name="near_by" translatable="true">Near By</string>
+    <string name="emergency_services" translatable="true">Emergency services</string>
+    <string name="danger" translatable="true">Danger</string>
+    <string name="medical" translatable="true">Medical</string>
+    <string name="name" translatable="true">Name</string>
+
 </resources>

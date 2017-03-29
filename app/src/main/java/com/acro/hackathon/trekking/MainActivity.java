@@ -8,8 +8,15 @@ import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.acro.hackathon.LocationBaseActivity;
+import com.acro.hackathon.LocationConfiguration;
+import com.acro.hackathon.LocationManager;
+import com.acro.hackathon.constants.FailType;
+import com.acro.hackathon.constants.LogType;
+import com.acro.hackathon.constants.ProviderType;
+import com.acro.hackathon.trekking.POJO.weather.ResponseData;
+import com.acro.hackathon.trekking.network.WeatherDataInterface;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -17,14 +24,6 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.acro.hackathon.trekking.POJO.weather.ResponseData;
-import com.acro.hackathon.LocationBaseActivity;
-import com.acro.hackathon.LocationConfiguration;
-import com.acro.hackathon.LocationManager;
-import com.acro.hackathon.constants.FailType;
-import com.acro.hackathon.constants.LogType;
-import com.acro.hackathon.constants.ProviderType;
-import com.acro.hackathon.trekking.network.WeatherDataInterface;
 
 import java.security.cert.CertificateException;
 
@@ -180,13 +179,13 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         weatherDataResponse.enqueue(new Callback<ResponseData>() {
             @Override
             public void onResponse(Call<ResponseData> call, Response<ResponseData> response) {
-               weatherText.setText("weather-"+response.body().getList().get(0).getMain().getTemp()+(char) 0x00B0 +"C/"+response.body().getList().get(0).getWeather().get(0).getMain());
+               weatherText.setText("Weather-"+response.body().getList().get(0).getMain().getTemp()+(char) 0x00B0 +"C/"+response.body().getList().get(0).getWeather().get(0).getMain());
                 Log.d("weatherText",weatherText.getText().toString());
             }
 
             @Override
             public void onFailure(Call<ResponseData> call, Throwable t) {
-                Log.d("Failure",t.getCause().toString());
+                Log.d("Failure",t.getLocalizedMessage());
             }
         });
 
@@ -197,7 +196,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         switch(view.getId()) {
 
             case R.id.bankBtn:
-                Toast.makeText(this, "Bank button clicked", Toast.LENGTH_SHORT).show();
+             //   Toast.makeText(this, "Bank button clicked", Toast.LENGTH_SHORT).show();
                 Intent i=new Intent(MainActivity.this,NearByPlacesActivity.class);
                 i.putExtra("type","bank");
                 i.putExtra("latitude",String.valueOf(latitude));
@@ -205,7 +204,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
                 startActivity(i);
             break;
             case R.id.hospitalBtn:
-                Toast.makeText(this, "Hospital button clicked", Toast.LENGTH_SHORT).show();
+             //   Toast.makeText(this, "Hospital button clicked", Toast.LENGTH_SHORT).show();
                 Intent i1=new Intent(MainActivity.this,NearByPlacesActivity.class);
                 i1.putExtra("type","hospital");
                 i1.putExtra("latitude",String.valueOf(latitude));
@@ -213,7 +212,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
                 startActivity(i1);
             break;
             case R.id.eatries:
-                Toast.makeText(this, "Eatries button clicked", Toast.LENGTH_SHORT).show();
+            //    Toast.makeText(this, "Eatries button clicked", Toast.LENGTH_SHORT).show();
                 Intent i2=new Intent(MainActivity.this,NearByPlacesActivity.class);
                 i2.putExtra("type","eatries");
                 i2.putExtra("latitude",String.valueOf(latitude));
@@ -221,7 +220,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
                 startActivity(i2);
                 break;
             case R.id.accomodation:
-                Toast.makeText(this, "Accomodation button clicked", Toast.LENGTH_SHORT).show();
+             //   Toast.makeText(this, "Accomodation button clicked", Toast.LENGTH_SHORT).show();
                 Intent i3=new Intent(MainActivity.this,NearByPlacesActivity.class);
                 i3.putExtra("type","hotel");
                 i3.putExtra("latitude",String.valueOf(latitude));
