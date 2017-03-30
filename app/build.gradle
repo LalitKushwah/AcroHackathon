@@ -5,7 +5,7 @@ android {
     buildToolsVersion versions.buildToolsVersion
 
     defaultConfig {
-        applicationId "com.yayandroid.locationmanager.sample"
+        applicationId "com.acro.hackathon.trekking"
         minSdkVersion versions.minSdkVersion
         targetSdkVersion versions.targetSdkVersion
         versionCode 1

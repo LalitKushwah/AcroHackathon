@@ -4,9 +4,12 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
+import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.acro.hackathon.LocationBaseActivity;
@@ -47,7 +50,9 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
     public Double latitude=9.9312,longitude=76.2673;
     private ProgressDialog progressDialog;
     public TextView weatherText;
-
+    private String drawerOptions[];
+    ListView mDrawerList;
+    DrawerLayout mDrawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +60,11 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         setContentView(R.layout.activity_main);
         weatherText=(TextView)findViewById(R.id.weatherText);
         LocationManager.setLogType(LogType.GENERAL);
+        drawerOptions = getResources().getStringArray(R.array.drawer_options);
+        mDrawerLayout = (DrawerLayout)findViewById(R.id.drawer);
+        mDrawerList = (ListView)findViewById(R.id.navigation_list);
 
+        mDrawerList.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, drawerOptions));
         getLocation();
     }
 
@@ -82,8 +91,8 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
                 .setWaitPeriod(ProviderType.GOOGLE_PLAY_SERVICES, 5 * 1000)
                 .setWaitPeriod(ProviderType.GPS, 10 * 1000)
                 .setWaitPeriod(ProviderType.NETWORK, 5 * 1000)
-                .setGPSMessage("Would you mind to turn GPS on?")
-                .setRationalMessage("Gimme the permission!");
+                .setGPSMessage("Please enable GPS")
+                .setRationalMessage("Allow the app to use GPS");
     }
 
     @Override
@@ -179,7 +188,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         weatherDataResponse.enqueue(new Callback<ResponseData>() {
             @Override
             public void onResponse(Call<ResponseData> call, Response<ResponseData> response) {
-               weatherText.setText("Weather-"+response.body().getList().get(0).getMain().getTemp()+(char) 0x00B0 +"C/"+response.body().getList().get(0).getWeather().get(0).getMain());
+               weatherText.setText(response.body().getList().get(0).getMain().getTemp()+(char) 0x00B0 +"C/"+response.body().getList().get(0).getWeather().get(0).getMain());
                 Log.d("weatherText",weatherText.getText().toString());
             }
 

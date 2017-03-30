@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:weightSum="2"
+    android:weightSum="3"
     android:orientation="horizontal">
 
     <ImageView
@@ -14,20 +14,42 @@
 
     <RelativeLayout
         android:layout_width="0dp"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/name"
-        android:id="@+id/textView"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "The name is Prasheel Soni. from Acropolis Institute"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:padding="4dp"
+            android:id="@+id/textView"/>
 
-     <TextView
-         android:layout_width="wrap_content"
-         android:layout_below="@id/textView"
-         android:text=""
-         android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@id/textView"
+            android:padding="2dp"
+            android:id="@+id/dfu"
+            android:textSize="15sp"
+            android:text="Distance from User"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/navigate"
+            android:textColor="#1f81ea"
+            android:layout_marginTop="4dp"
+            android:padding="4dp"
+            android:text="Navigate"
+            android:layout_below="@id/dfu"
+            android:background="@drawable/hollow_blue_button"
+
+            />
 
     </RelativeLayout>
 
