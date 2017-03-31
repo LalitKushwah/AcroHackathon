@@ -2,6 +2,7 @@ package com.acro.hackathon.trekking;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
 import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,6 +11,8 @@ import android.view.Window;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.acro.hackathon.trekking.POJO.mapDirection.MapDirectionResponse;
+import com.acro.hackathon.trekking.network.MapDirectionCalls;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -25,6 +28,7 @@ import com.acro.hackathon.constants.FailType;
 import com.acro.hackathon.constants.LogType;
 import com.acro.hackathon.constants.ProviderType;
 import com.acro.hackathon.trekking.network.WeatherDataInterface;
+import com.google.android.gms.maps.model.Polyline;import com.google.android.gms.maps.model.PolylineOptions;
 
 import java.security.cert.CertificateException;
 
@@ -45,7 +49,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends LocationBaseActivity implements OnMapReadyCallback {
     private GoogleMap mMap;
-    public Double latitude=9.9312,longitude=76.2673;
+    public static Double latitude=9.9312,longitude=76.2673;
     private ProgressDialog progressDialog;
     public TextView weatherText;
 
@@ -56,22 +60,25 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         setContentView(R.layout.activity_main);
         weatherText=(TextView)findViewById(R.id.weatherText);
         LocationManager.setLogType(LogType.GENERAL);
-
+        weatherData();
         getLocation();
     }
 
+
+
+    //Map related stuff
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        LatLng indore =new LatLng((latitude+0.05),(longitude+0.05));
-        Marker laundary= mMap.addMarker(new MarkerOptions().position(indore).title("Your location"));
+        LatLng indore =new LatLng((latitude),(longitude));
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 11.0f));
-   /*     Circle circle = mMap.addCircle(new CircleOptions()
-                .center(new LatLng(latitude, longitude))
-                .radius(10000)
-                .strokeColor(Color.GRAY)
-                .fillColor(Color.WHITE)); //Inside color
-*/
+        Marker laundary= mMap.addMarker(new MarkerOptions().position(indore).title("Your location"));
+
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
+
+
     }
 
     @Override
@@ -87,6 +94,8 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
                 .setRationalMessage("Gimme the permission!");
     }
 
+
+    //Should be used for the server calls stuff like (weather,location,server php hit
     @Override
     public void onLocationChanged(Location location) {
         dismissProgress();
@@ -164,33 +173,6 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
     private void setText(Location location) {
         latitude=location.getLatitude();
         longitude=location.getLongitude();
-
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
-
-        Retrofit login = new Retrofit.Builder()
-                .baseUrl("http://api.openweathermap.org/")
-                .client(getUnsafeOkHttpClient())
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-
-        WeatherDataInterface services = login.create(WeatherDataInterface.class);
-        final Call<ResponseData> weatherDataResponse = services.getWheatherReport(String.valueOf(location.getLatitude()),String.valueOf(location.getLongitude()),"e415c72a39337b04fc6749b09b2406f3","metric");
-        weatherDataResponse.enqueue(new Callback<ResponseData>() {
-            @Override
-            public void onResponse(Call<ResponseData> call, Response<ResponseData> response) {
-               weatherText.setText("weather-"+response.body().getList().get(0).getMain().getTemp()+(char) 0x00B0 +"C/"+response.body().getList().get(0).getWeather().get(0).getMain());
-                Log.d("weatherText",weatherText.getText().toString());
-            }
-
-            @Override
-            public void onFailure(Call<ResponseData> call, Throwable t) {
-                Log.d("Failure",t.getCause().toString());
-            }
-        });
-
-
     }
 
     public void onClick(View view) {
@@ -278,4 +260,53 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
             throw new RuntimeException(e);
         }
     }
+
+
+    //For gettting weather data (temp,wind,humid etc)
+    public void weatherData() {
+        Retrofit login = new Retrofit.Builder()
+                .baseUrl("http://api.openweathermap.org/")
+                .client(getUnsafeOkHttpClient())
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+        WeatherDataInterface services = login.create(WeatherDataInterface.class);
+        Call<ResponseData> weatherDataResponse = services.getWheatherReport(String.valueOf(latitude),String.valueOf(longitude),"e415c72a39337b04fc6749b09b2406f3","metric");
+        weatherDataResponse.enqueue(new Callback<ResponseData>() {
+            @Override
+            public void onResponse(Call<ResponseData> call, Response<ResponseData> response) {
+                weatherText.setText("weather-"+response.body().getList().get(0).getMain().getTemp()+(char) 0x00B0 +"C/"+response.body().getList().get(0).getWeather().get(0).getMain());
+            }
+
+            @Override
+            public void onFailure(Call<ResponseData> call, Throwable t) {
+                Log.d("Failure",t.getMessage());
+            }
+        });
+
+
+    }
+
+
+    //For drawing path between two lat,long
+   public void mapDirectionData() {
+       Retrofit retrofit = new Retrofit.Builder()
+               .baseUrl("https://maps.googleapis.com/")
+               .client(getUnsafeOkHttpClient())
+               .addConverterFactory(GsonConverterFactory.create())
+               .build();
+       MapDirectionCalls calls = retrofit.create(MapDirectionCalls.class);
+       Call<MapDirectionResponse> responseCall=calls.mapDirectionPath("Toronto","Montreal","bicycling","AIzaSyAvfrpCpuJb3lyDr0xXdSdWyesBcs5vago");
+       responseCall.enqueue(new Callback<MapDirectionResponse>() {
+           @Override
+           public void onResponse(Call<MapDirectionResponse> call, Response<MapDirectionResponse> response) {
+           }
+
+           @Override
+           public void onFailure(Call<MapDirectionResponse> call, Throwable t) {
+           }
+       });
+   }
+
+
+
 }

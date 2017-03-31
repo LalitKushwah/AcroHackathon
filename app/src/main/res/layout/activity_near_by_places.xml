@@ -5,11 +5,22 @@
     android:orientation="vertical"
     android:background="#f2f0f0"
     android:id="@+id/lay">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:id="@+id/title"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_gravity="center"/>
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/nearByPlacerecyclerView">
+
+
 
 
 
