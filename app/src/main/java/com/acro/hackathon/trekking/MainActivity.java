@@ -2,6 +2,7 @@ package com.acro.hackathon.trekking;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
@@ -11,6 +12,7 @@ import android.view.Window;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.acro.hackathon.LocationBaseActivity;
 import com.acro.hackathon.LocationConfiguration;
@@ -19,6 +21,7 @@ import com.acro.hackathon.constants.FailType;
 import com.acro.hackathon.constants.LogType;
 import com.acro.hackathon.constants.ProviderType;
 import com.acro.hackathon.trekking.POJO.weather.ResponseData;
+import com.acro.hackathon.trekking.network.TrekkingRoutes;
 import com.acro.hackathon.trekking.network.WeatherDataInterface;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -27,8 +30,13 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
+
+import org.json.JSONObject;
 
 import java.security.cert.CertificateException;
+import java.util.List;
 
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLContext;
@@ -45,12 +53,15 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+import static com.acro.hackathon.trekking.R.id.map;
+
 public class MainActivity extends LocationBaseActivity implements OnMapReadyCallback {
     private GoogleMap mMap;
     public Double latitude=9.9312,longitude=76.2673;
     private ProgressDialog progressDialog;
     public TextView weatherText;
     private String drawerOptions[];
+    JSONObject dataset;
     ListView mDrawerList;
     DrawerLayout mDrawerLayout;
 
@@ -60,26 +71,76 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         setContentView(R.layout.activity_main);
         weatherText=(TextView)findViewById(R.id.weatherText);
         LocationManager.setLogType(LogType.GENERAL);
+        getTrekkingDatas();
         drawerOptions = getResources().getStringArray(R.array.drawer_options);
         mDrawerLayout = (DrawerLayout)findViewById(R.id.drawer);
         mDrawerList = (ListView)findViewById(R.id.navigation_list);
 
         mDrawerList.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, drawerOptions));
+
         getLocation();
+
+//        try {
+//
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        }
     }
+
+
+
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
+
         mMap = googleMap;
         LatLng indore =new LatLng((latitude+0.05),(longitude+0.05));
         Marker laundary= mMap.addMarker(new MarkerOptions().position(indore).title("Your location"));
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 11.0f));
+
+
+            SupportMapFragment mapFragment = (SupportMapFragment)getSupportFragmentManager().findFragmentById(R.id.map);
+            mapFragment.getMapAsync(this);
+
+
    /*     Circle circle = mMap.addCircle(new CircleOptions()
                 .center(new LatLng(latitude, longitude))
                 .radius(10000)
                 .strokeColor(Color.GRAY)
                 .fillColor(Color.WHITE)); //Inside color
 */
+
+
+//            JSONArray routes = (JSONArray) dataset.get("routes");
+//            JSONObject route = (JSONObject) routes.get(0);
+//            JSONArray coordinates = (JSONArray)route.get("coordinates");
+//
+//            for(int i=0;i<coordinates.length()-1;i++){
+//                String coord1  = (String) coordinates.get(i);
+//                String coord2 = (String) coordinates.get(i+1);
+//
+//                String coord1Arr[] = coord1.split("/");
+//                String coord2Arr[] = coord2.split("/");
+//
+//
+//                Polyline line = mMap.addPolyline(new PolylineOptions()
+//                .add(new LatLng(Long.parseLong(coord1Arr[1]), Long.parseLong(coord1Arr[0])), new LatLng(Long.parseLong(coord2Arr[1]), Long.parseLong(coord2Arr[0])))
+//                .width(8)
+//                .color(Color.RED));
+
+
+
+
+
+
+
+
+
+        //TODO : Below is the code to draw line between two GPS coordinates on a map. Use this code to draw Trekking Routes on Map.
+//        Polyline line = mMap.addPolyline(new PolylineOptions()
+//                .add(new LatLng(10.0081428,76.3670165), new LatLng(10.009687, 76.364758))
+//                .width(8)
+//                .color(Color.RED));
     }
 
     @Override
@@ -174,7 +235,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         longitude=location.getLongitude();
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
+                .findFragmentById(map);
         mapFragment.getMapAsync(this);
 
         Retrofit login = new Retrofit.Builder()
@@ -241,6 +302,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         }
 
     }
+
     public static OkHttpClient getUnsafeOkHttpClient() {
         try {
             // Create a trust manager that does not validate certificate chains
@@ -285,5 +347,68 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+    }
+
+
+    public void getTrekkingDatas(){
+        Retrofit adapter = new Retrofit.Builder()
+                .baseUrl("http://acrokids-ps11.rhcloud.com/")
+                .client(MainActivity.getUnsafeOkHttpClient())
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        TrekkingRoutes service = adapter.create(TrekkingRoutes.class);
+
+        Call<com.acro.hackathon.trekking.POJO.routes.TrekkingRoutes> response = service.getTrekkingRoutes();
+
+        response.enqueue(new Callback<com.acro.hackathon.trekking.POJO.routes.TrekkingRoutes>() {
+            @Override
+            public void onResponse(Call<com.acro.hackathon.trekking.POJO.routes.TrekkingRoutes> call, Response<com.acro.hackathon.trekking.POJO.routes.TrekkingRoutes> response) {
+                if (response.isSuccessful()) {
+                    Toast.makeText(MainActivity.this, response.body().getRoutes().get(0).getName(), Toast.LENGTH_SHORT).show();
+
+
+//                    dataset = response.body()
+//                    JSONArray routes = (JSONArray) dataset.get("routes");
+//            JSONObject route = (JSONObject) routes.get(0);
+//            JSONArray coordinates = (JSONArray)route.get("coordinates");
+
+                    List<com.acro.hackathon.trekking.POJO.routes.Route> routes = response.body().getRoutes();
+
+            for(int i=0;i<routes.size();i++){
+
+            List<String> coordinates = routes.get(i).getCoordinates();
+
+                //TODO : resolve NuberFormat exception
+
+
+                for(int j=0;j<coordinates.size();j++){
+                    String coord1  =  coordinates.get(j);
+                    String coord2 =  coordinates.get(j+1);
+                    String coord1Arr[] = coord1.split("/");
+                    String coord2Arr[] = coord2.split("/");
+                    Polyline line = mMap.addPolyline(new PolylineOptions()
+                            .add(new LatLng(
+                                    Double.parseDouble(coord1Arr[1].replaceAll("\"","")),
+                                    Double.parseDouble(coord1Arr[0].replaceAll("\"",""))),
+                                    new LatLng(Double.parseDouble(coord2Arr[1].replaceAll("\"","")),
+                                            Double.parseDouble(coord2Arr[0].replaceAll("\"",""))))
+                            .width(8)
+
+
+                            .color(Color.RED));
+                }
+            }
+                }
+                else{
+                    Toast.makeText(MainActivity.this, "Network Error", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<com.acro.hackathon.trekking.POJO.routes.TrekkingRoutes> call, Throwable t) {
+                Toast.makeText(MainActivity.this, "On Failure", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }
