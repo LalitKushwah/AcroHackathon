@@ -1,20 +1,25 @@
 package com.acro.hackathon.trekking;
 
+import android.app.Dialog;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.location.Location;
 import android.os.Bundle;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.acro.hackathon.trekking.POJO.DangerMedical.DangerMedicalResponse;
 import com.acro.hackathon.trekking.POJO.mapDirection.MapDirectionResponse;
-import com.acro.hackathon.trekking.POJO.weather.List;
 import com.acro.hackathon.trekking.network.DangerMedicalCall;
 import com.acro.hackathon.trekking.network.MapDirectionCalls;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -32,10 +37,18 @@ import com.acro.hackathon.LocationManager;
 import com.acro.hackathon.constants.FailType;
 import com.acro.hackathon.constants.LogType;
 import com.acro.hackathon.constants.ProviderType;
+import com.acro.hackathon.trekking.POJO.routes.Feature;
+import com.acro.hackathon.trekking.POJO.routes.Treks;
+import com.acro.hackathon.trekking.network.TrekkingRoutes;
 import com.acro.hackathon.trekking.network.WeatherDataInterface;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
+
+import org.json.JSONObject;
 
 import java.security.cert.CertificateException;
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLContext;
@@ -57,9 +70,17 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
     public static Double latitude=10.057847,longitude=76.680466;
     private ProgressDialog progressDialog;
     public TextView weatherText;
-    public static ArrayList<List> weatherList=new ArrayList<>();
+    public static ArrayList<com.acro.hackathon.trekking.POJO.weather.List> weatherList=new ArrayList<>();
     public static ArrayList<String> details=new ArrayList<>();
     public Button danger,medical;
+    private String drawerOptions[];
+    JSONObject dataset;
+    Dialog dialog;
+    ArrayList<String> names;
+    ListView mDrawerList;
+    DrawerLayout mDrawerLayout;
+    int pos;
+    String treks[];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -122,13 +143,46 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
 
 
         weatherData();
+        drawerOptions = getResources().getStringArray(R.array.drawer_options);
+        mDrawerLayout = (DrawerLayout)findViewById(R.id.drawer);
+        mDrawerList = (ListView)findViewById(R.id.navigation_list);
+        mDrawerList.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, drawerOptions));
         getLocation();
+        names = new ArrayList<>();
+        names = getIntent().getStringArrayListExtra("names");
+        treks = getIntent().getStringArrayExtra("treks");
+
+
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Select a Trek");
+        builder.setItems(treks, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int item) {
+                // Do something with the selection
+                getTrekkingData(item);
+            }
+        });
+        AlertDialog alert = builder.create();
+        alert.show();
+
+
+        //TODO : Dialog
+
+
+
+
+
+
     }
+
+
+
 
 
     //Map related stuff
     @Override
     public void onMapReady(GoogleMap googleMap) {
+
         mMap = googleMap;
         LatLng indore =new LatLng((latitude),(longitude));
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 11.0f));
@@ -145,6 +199,33 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
 
 
 
+
+
+            mapFragment = (SupportMapFragment)getSupportFragmentManager().findFragmentById(R.id.map);
+            mapFragment.getMapAsync(this);
+
+   /*     Circle circle = mMap.addCircle(new CircleOptions()
+                .center(new LatLng(latitude, longitude))
+                .radius(10000)
+                .strokeColor(Color.GRAY)
+                .fillColor(Color.WHITE)); //Inside color
+*/
+
+
+
+
+
+
+
+
+
+
+
+        //TODO : Below is the code to draw line between two GPS coordinates on a map. Use this code to draw Trekking Routes on Map.
+//        Polyline line = mMap.addPolyline(new PolylineOptions()
+//                .add(new LatLng(10.0081428,76.3670165), new LatLng(10.009687, 76.364758))
+//                .width(8)
+//                .color(Color.RED));
     }
 
     @Override
@@ -156,8 +237,8 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
                 .setWaitPeriod(ProviderType.GOOGLE_PLAY_SERVICES, 5 * 1000)
                 .setWaitPeriod(ProviderType.GPS, 10 * 1000)
                 .setWaitPeriod(ProviderType.NETWORK, 5 * 1000)
-                .setGPSMessage("Would you mind to turn GPS on?")
-                .setRationalMessage("Gimme the permission!");
+                .setGPSMessage("Please enable GPS")
+                .setRationalMessage("Allow the app to use GPS");
     }
 
 
@@ -245,7 +326,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         switch(view.getId()) {
 
             case R.id.bankBtn:
-                Toast.makeText(this, "Bank button clicked", Toast.LENGTH_SHORT).show();
+             //   Toast.makeText(this, "Bank button clicked", Toast.LENGTH_SHORT).show();
                 Intent i=new Intent(MainActivity.this,NearByPlacesActivity.class);
                 i.putExtra("type","bank");
                 i.putExtra("latitude",String.valueOf(latitude));
@@ -253,7 +334,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
                 startActivity(i);
             break;
             case R.id.hospitalBtn:
-                Toast.makeText(this, "Hospital button clicked", Toast.LENGTH_SHORT).show();
+             //   Toast.makeText(this, "Hospital button clicked", Toast.LENGTH_SHORT).show();
                 Intent i1=new Intent(MainActivity.this,NearByPlacesActivity.class);
                 i1.putExtra("type","hospital");
                 i1.putExtra("latitude",String.valueOf(latitude));
@@ -261,7 +342,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
                 startActivity(i1);
             break;
             case R.id.eatries:
-                Toast.makeText(this, "Eatries button clicked", Toast.LENGTH_SHORT).show();
+            //    Toast.makeText(this, "Eatries button clicked", Toast.LENGTH_SHORT).show();
                 Intent i2=new Intent(MainActivity.this,NearByPlacesActivity.class);
                 i2.putExtra("type","eatries");
                 i2.putExtra("latitude",String.valueOf(latitude));
@@ -269,7 +350,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
                 startActivity(i2);
                 break;
             case R.id.accomodation:
-                Toast.makeText(this, "Accomodation button clicked", Toast.LENGTH_SHORT).show();
+             //   Toast.makeText(this, "Accomodation button clicked", Toast.LENGTH_SHORT).show();
                 Intent i3=new Intent(MainActivity.this,NearByPlacesActivity.class);
                 i3.putExtra("type","hotel");
                 i3.putExtra("latitude",String.valueOf(latitude));
@@ -281,6 +362,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         }
 
     }
+
     public static OkHttpClient getUnsafeOkHttpClient() {
         try {
             // Create a trust manager that does not validate certificate chains
@@ -444,5 +526,103 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
 
 
     }
+
+
+
+    public void getTrekkingData(int position){
+pos = position;
+
+        Retrofit adapter = new Retrofit.Builder()
+                .baseUrl("http://acrokids-ps11.rhcloud.com/")
+                .client(MainActivity.getUnsafeOkHttpClient())
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        TrekkingRoutes service = adapter.create(TrekkingRoutes.class);
+
+        Call<Treks> response = service.getTrekkingRoutes();
+
+        response.enqueue(new Callback<Treks>() {
+            @Override
+            public void onResponse(Call<Treks> call, Response<Treks> response) {
+                if (response.isSuccessful()) {
+//                    dataset = response.body()
+//                    JSONArray routes = (JSONArray) dataset.get("routes");
+//            JSONObject route = (JSONObject) routes.get(0);
+//            JSONArray coordinates = (JSONArray)route.get("coordinates");
+
+                    Treks routes = response.body();
+
+                    List<Feature> features = routes.getFeatures();
+
+
+
+                    List<List<Double>> coordinates = features.get(pos).getGeometry().getCoordinates();
+                        int i=0;
+                    do{
+
+                        List<Double> data = coordinates.get(i);
+                        Double long1 = data.get(0);
+                        Double lat1 = data.get(1);
+                        i++;
+                        data = coordinates.get(i);
+                        Double long2 = data.get(0);
+                        Double lat2 = data.get(1);
+
+
+                        Polyline line = mMap.addPolyline(new PolylineOptions()
+                            .add(new LatLng(
+                                    lat1,
+                                    long1),
+                                    new LatLng(lat2,
+                                            long2))
+                            .width(8)
+                            .color(Color.RED));
+
+
+
+
+                    }while(i<coordinates.size()-1);
+
+//            for(int i=0;i<routes.size();i++){
+//
+//            List<String> coordinates = routes.get(i).getCoordinates();
+//
+//
+//
+//
+//                for(int j=0;j<coordinates.size()-1;j++){
+//                    String coord1  =  coordinates.get(j);
+//                    String coord2 =  coordinates.get(j+1);
+//                    String coord1Arr[] = coord1.split("/");
+//                    String coord2Arr[] = coord2.split("/");
+//                    Polyline line = mMap.addPolyline(new PolylineOptions()
+//                            .add(new LatLng(
+//                                    Double.parseDouble(coord1Arr[1].replaceAll("\"","")),
+//                                    Double.parseDouble(coord1Arr[0].replaceAll("\"",""))),
+//                                    new LatLng(Double.parseDouble(coord2Arr[1].replaceAll("\"","")),
+//                                            Double.parseDouble(coord2Arr[0].replaceAll("\"",""))))
+//                            .width(8)
+//
+//
+//                            .color(Color.RED));
+//                }
+//            }
+
+                }
+                else{
+                    Toast.makeText(MainActivity.this, "Network Error", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Treks> call, Throwable t) {
+                Log.e("Response ERROR**", "onFailure: "+ t.getLocalizedMessage());
+                Toast.makeText(MainActivity.this, t.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+
 
 }
