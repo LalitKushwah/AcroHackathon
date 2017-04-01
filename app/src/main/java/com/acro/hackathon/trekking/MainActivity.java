@@ -20,6 +20,8 @@ import com.acro.hackathon.LocationManager;
 import com.acro.hackathon.constants.FailType;
 import com.acro.hackathon.constants.LogType;
 import com.acro.hackathon.constants.ProviderType;
+import com.acro.hackathon.trekking.POJO.routes.Feature;
+import com.acro.hackathon.trekking.POJO.routes.Treks;
 import com.acro.hackathon.trekking.POJO.weather.ResponseData;
 import com.acro.hackathon.trekking.network.TrekkingRoutes;
 import com.acro.hackathon.trekking.network.WeatherDataInterface;
@@ -358,46 +360,75 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
 
         TrekkingRoutes service = adapter.create(TrekkingRoutes.class);
 
-        Call<com.acro.hackathon.trekking.POJO.routes.TrekkingRoutes> response = service.getTrekkingRoutes();
+        Call<Treks> response = service.getTrekkingRoutes();
 
-        response.enqueue(new Callback<com.acro.hackathon.trekking.POJO.routes.TrekkingRoutes>() {
+        response.enqueue(new Callback<Treks>() {
             @Override
-            public void onResponse(Call<com.acro.hackathon.trekking.POJO.routes.TrekkingRoutes> call, Response<com.acro.hackathon.trekking.POJO.routes.TrekkingRoutes> response) {
+            public void onResponse(Call<Treks> call, Response<Treks> response) {
                 if (response.isSuccessful()) {
-                    Toast.makeText(MainActivity.this, response.body().getRoutes().get(0).getName(), Toast.LENGTH_SHORT).show();
-
-
 //                    dataset = response.body()
 //                    JSONArray routes = (JSONArray) dataset.get("routes");
 //            JSONObject route = (JSONObject) routes.get(0);
 //            JSONArray coordinates = (JSONArray)route.get("coordinates");
 
-                    List<com.acro.hackathon.trekking.POJO.routes.Route> routes = response.body().getRoutes();
+                    Treks routes = response.body();
 
-            for(int i=0;i<routes.size();i++){
-
-            List<String> coordinates = routes.get(i).getCoordinates();
-
-                //TODO : resolve NuberFormat exception
+                    List<Feature> features = routes.getFeatures();
 
 
-                for(int j=0;j<coordinates.size()-1;j++){
-                    String coord1  =  coordinates.get(j);
-                    String coord2 =  coordinates.get(j+1);
-                    String coord1Arr[] = coord1.split("/");
-                    String coord2Arr[] = coord2.split("/");
-                    Polyline line = mMap.addPolyline(new PolylineOptions()
+
+                    List<List<Double>> coordinates = features.get(0).getGeometry().getCoordinates();
+                        int i=0;
+                    do{
+
+                        List<Double> data = coordinates.get(i);
+                        Double long1 = data.get(0);
+                        Double lat1 = data.get(1);
+                        i++;
+                        data = coordinates.get(i);
+                        Double long2 = data.get(0);
+                        Double lat2 = data.get(1);
+
+
+                        Polyline line = mMap.addPolyline(new PolylineOptions()
                             .add(new LatLng(
-                                    Double.parseDouble(coord1Arr[1].replaceAll("\"","")),
-                                    Double.parseDouble(coord1Arr[0].replaceAll("\"",""))),
-                                    new LatLng(Double.parseDouble(coord2Arr[1].replaceAll("\"","")),
-                                            Double.parseDouble(coord2Arr[0].replaceAll("\"",""))))
+                                    lat1,
+                                    long1),
+                                    new LatLng(lat2,
+                                            long2))
                             .width(8)
-
-
                             .color(Color.RED));
-                }
-            }
+
+
+
+
+                    }while(i<coordinates.size()-1);
+
+//            for(int i=0;i<routes.size();i++){
+//
+//            List<String> coordinates = routes.get(i).getCoordinates();
+//
+//                //TODO : resolve NuberFormat exception
+//
+//
+//                for(int j=0;j<coordinates.size()-1;j++){
+//                    String coord1  =  coordinates.get(j);
+//                    String coord2 =  coordinates.get(j+1);
+//                    String coord1Arr[] = coord1.split("/");
+//                    String coord2Arr[] = coord2.split("/");
+//                    Polyline line = mMap.addPolyline(new PolylineOptions()
+//                            .add(new LatLng(
+//                                    Double.parseDouble(coord1Arr[1].replaceAll("\"","")),
+//                                    Double.parseDouble(coord1Arr[0].replaceAll("\"",""))),
+//                                    new LatLng(Double.parseDouble(coord2Arr[1].replaceAll("\"","")),
+//                                            Double.parseDouble(coord2Arr[0].replaceAll("\"",""))))
+//                            .width(8)
+//
+//
+//                            .color(Color.RED));
+//                }
+//            }
+
                 }
                 else{
                     Toast.makeText(MainActivity.this, "Network Error", Toast.LENGTH_SHORT).show();
@@ -405,8 +436,9 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
             }
 
             @Override
-            public void onFailure(Call<com.acro.hackathon.trekking.POJO.routes.TrekkingRoutes> call, Throwable t) {
-                Toast.makeText(MainActivity.this, "On Failure", Toast.LENGTH_SHORT).show();
+            public void onFailure(Call<Treks> call, Throwable t) {
+                Log.e("Response ERROR**", "onFailure: "+ t.getLocalizedMessage());
+                Toast.makeText(MainActivity.this, t.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }

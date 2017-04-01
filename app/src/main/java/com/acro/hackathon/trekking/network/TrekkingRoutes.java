@@ -1,5 +1,7 @@
 package com.acro.hackathon.trekking.network;
 
+import com.acro.hackathon.trekking.POJO.routes.Treks;
+
 import retrofit2.Call;
 import retrofit2.http.POST;
 
@@ -9,8 +11,8 @@ import retrofit2.http.POST;
 
 public interface TrekkingRoutes {
 
-    @POST("/new_routes.json")
-    Call<com.acro.hackathon.trekking.POJO.routes.TrekkingRoutes> getTrekkingRoutes();
+    @POST("/Trek.json")
+    Call<Treks> getTrekkingRoutes();
 
 
 }

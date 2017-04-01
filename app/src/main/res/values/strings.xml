@@ -7,13 +7,13 @@
     <string name="danger" translatable="true">Danger</string>
     <string name="medical" translatable="true">Medical</string>
     <string name="name" translatable="true">Name</string>
-<string-array name="drawer_options">
-    <item >Home</item>
-    <item> Profile</item>
-    <item>Treks</item>
-    <item>Completed Treks</item>
-    <item>Contact</item>
-    <item>About</item>
-    <item>Logout</item>
-</string-array>
+    <string-array name="drawer_options">
+        <item>Home</item>
+        <item> Profile</item>
+        <item>Treks</item>
+        <item>Completed Treks</item>
+        <item>Contact</item>
+        <item>About</item>
+        <item>Logout</item>
+    </string-array>
 </resources>
