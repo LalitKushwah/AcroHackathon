@@ -1,4 +1,3 @@
-
 <resources>
     <string name="app_name" translatable="true">TrekLive</string>
     <string name="weather_loading" translatable="true">Loading Weather Condition…</string>

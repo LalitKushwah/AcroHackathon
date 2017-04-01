@@ -18,9 +18,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.acro.hackathon.trekking.POJO.DangerMedical.DangerMedicalResponse;
 import com.acro.hackathon.trekking.POJO.mapDirection.MapDirectionResponse;
-import com.acro.hackathon.trekking.network.DangerMedicalCall;
 import com.acro.hackathon.trekking.network.MapDirectionCalls;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -67,6 +65,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends LocationBaseActivity implements OnMapReadyCallback {
     private GoogleMap mMap;
+    public Retrofit retrofit;
     public static Double latitude=10.057847,longitude=76.680466;
     private ProgressDialog progressDialog;
     public TextView weatherText;
@@ -89,11 +88,13 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         weatherText=(TextView)findViewById(R.id.weatherText);
         LocationManager.setLogType(LogType.GENERAL);
 
-        Retrofit retrofitObj=new Retrofit.Builder()
+        retrofit=new Retrofit.Builder()
                 .baseUrl("http://192.168.0.105:80")
                 .client(getUnsafeOkHttpClient())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
+
+        /*
        final DangerMedicalCall service=retrofitObj.create(DangerMedicalCall.class);
 
         danger=(Button)findViewById(R.id.danger);
@@ -132,14 +133,12 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
 
                         }
                     });
-
-
                 }
             }
 
 
 
-        });
+        });*/
 
 
         weatherData();
@@ -196,29 +195,12 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
                 .position(new LatLng(latitude, longitude))
                 .title("San Francisco").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
 
-
-
-
-
-
-            mapFragment = (SupportMapFragment)getSupportFragmentManager().findFragmentById(R.id.map);
-            mapFragment.getMapAsync(this);
-
    /*     Circle circle = mMap.addCircle(new CircleOptions()
                 .center(new LatLng(latitude, longitude))
                 .radius(10000)
                 .strokeColor(Color.GRAY)
                 .fillColor(Color.WHITE)); //Inside color
 */
-
-
-
-
-
-
-
-
-
 
 
         //TODO : Below is the code to draw line between two GPS coordinates on a map. Use this code to draw Trekking Routes on Map.
@@ -326,37 +308,53 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         switch(view.getId()) {
 
             case R.id.bankBtn:
+                Intent i=new Intent(MainActivity.this,InstructionActivity.class);
+                i.putExtra("type","Do's and Don'ts");
+                startActivity(i);
+
              //   Toast.makeText(this, "Bank button clicked", Toast.LENGTH_SHORT).show();
-                Intent i=new Intent(MainActivity.this,NearByPlacesActivity.class);
+                /*Intent i=new Intent(MainActivity.this,NearByPlacesActivity.class);
                 i.putExtra("type","bank");
                 i.putExtra("latitude",String.valueOf(latitude));
                 i.putExtra("longitude",String.valueOf(longitude));
-                startActivity(i);
+                startActivity(i);*/
             break;
             case R.id.hospitalBtn:
+                Intent i1=new Intent(MainActivity.this,InstructionActivity.class);
+                i1.putExtra("type","Kit");
+                startActivity(i1);
+
+
              //   Toast.makeText(this, "Hospital button clicked", Toast.LENGTH_SHORT).show();
-                Intent i1=new Intent(MainActivity.this,NearByPlacesActivity.class);
+               /* Intent i1=new Intent(MainActivity.this,NearByPlacesActivity.class);
                 i1.putExtra("type","hospital");
                 i1.putExtra("latitude",String.valueOf(latitude));
                 i1.putExtra("longitude",String.valueOf(longitude));
-                startActivity(i1);
+                startActivity(i1);*/
             break;
             case R.id.eatries:
+                Intent i2=new Intent(MainActivity.this,InstructionActivity.class);
+                i2.putExtra("type","Procedure");
+                startActivity(i2);
             //    Toast.makeText(this, "Eatries button clicked", Toast.LENGTH_SHORT).show();
-                Intent i2=new Intent(MainActivity.this,NearByPlacesActivity.class);
+                /*Intent i2=new Intent(MainActivity.this,NearByPlacesActivity.class);
                 i2.putExtra("type","eatries");
                 i2.putExtra("latitude",String.valueOf(latitude));
                 i2.putExtra("longitude",String.valueOf(longitude));
-                startActivity(i2);
+                startActivity(i2);*/
                 break;
             case R.id.accomodation:
-             //   Toast.makeText(this, "Accomodation button clicked", Toast.LENGTH_SHORT).show();
-                Intent i3=new Intent(MainActivity.this,NearByPlacesActivity.class);
+                Intent i3=new Intent(MainActivity.this,InstructionActivity.class);
+                i3.putExtra("type","BaseCamp Information");
+                startActivity(i3);
+
+                //   Toast.makeText(this, "Accomodation button clicked", Toast.LENGTH_SHORT).show();
+                /*Intent i3=new Intent(MainActivity.this,NearByPlacesActivity.class);
                 i3.putExtra("type","hotel");
                 i3.putExtra("latitude",String.valueOf(latitude));
                 i3.putExtra("longitude",String.valueOf(longitude));
                 startActivity(i3);
-                break;
+                break;*/
 
 
         }
@@ -530,7 +528,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
 
 
     public void getTrekkingData(int position){
-pos = position;
+            pos = position;
 
         Retrofit adapter = new Retrofit.Builder()
                 .baseUrl("http://acrokids-ps11.rhcloud.com/")
