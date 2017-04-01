@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mountain"
+        android:weightSum="1">
+
+
+        <TextView
+            android:text="Hassle-Free Himalayas"
+            android:textSize="35dp"
+            android:textStyle="bold|italic"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#fdfbfb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/symbol2"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="120dp"
+            android:id="@+id/imageView5"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_height="45dp"
+            android:inputType="textPersonName"
+            android:hint="Enter Your Name"
+            android:textStyle="italic"
+            android:textSize="22dp"
+            android:ems="10"
+            android:id="@+id/editTextname" />
+        <EditText
+            android:layout_width="320dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_height="45dp"
+            android:inputType="textPersonName"
+            android:textSize="22dp"
+            android:hint="Enter Your Mobile"
+            android:textStyle="italic"
+            android:ems="10"
+            android:id="@+id/editTextmobile" />
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_height="45dp"
+            android:inputType="textPersonName"
+            android:textSize="22dp"
+            android:hint="Enter Your Gender"
+            android:textStyle="italic"
+            android:ems="10"
+            android:id="@+id/editTextgender" />
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_height="45dp"
+            android:inputType="textPersonName"
+            android:textSize="22dp"
+            android:textStyle="italic"
+            android:hint="Enter Your Address"
+            android:ems="10"
+            android:id="@+id/editTextaddress" />
+
+        <Button
+            android:text="Sign Up"
+            android:textColor="#fcfbfb"
+            android:textStyle="bold"
+            android:background="#300cff"
+            android:textSize="20dp"
+            android:layout_width="320dp"
+            android:layout_marginLeft="23dp"
+            android:padding="10dp"
+            android:layout_marginTop="18dp"
+            android:layout_height="50dp"
+            android:id="@+id/finalsignupbutton"/>
+
+        <TextView
+            android:text="Already a member? Sign In"
+            android:textColor="#111111"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textviewaccountlogin" />
+
+
+    </LinearLayout>
+</ScrollView>
+
+

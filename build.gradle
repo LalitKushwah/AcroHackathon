@@ -27,7 +27,7 @@ allprojects {
               minSdkVersion    : 14,
               compileSdkVersion: 24,
               targetSdkVersion : 24,
-              buildToolsVersion: '24.0.3'
+              buildToolsVersion: '25.0.2'
         ]
 
         libraries = [
