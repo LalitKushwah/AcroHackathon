@@ -13,6 +13,4 @@ public interface TrekkingRoutes {
 
     @POST("/Trek.json")
     Call<Treks> getTrekkingRoutes();
-
-
 }

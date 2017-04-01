@@ -24,4 +24,5 @@ dependencies {
     compile 'com.google.android.gms:play-services:9.6.1'
     compile 'com.android.support:recyclerview-v7:+'
     compile 'com.squareup.okhttp3:logging-interceptor:3.3.1'
+    compile 'agency.tango.android:material-intro-screen:0.0.5'
 }

@@ -72,20 +72,13 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         setContentView(R.layout.activity_main);
         weatherText=(TextView)findViewById(R.id.weatherText);
         LocationManager.setLogType(LogType.GENERAL);
-        getTrekkingDatas();
+
         drawerOptions = getResources().getStringArray(R.array.drawer_options);
         mDrawerLayout = (DrawerLayout)findViewById(R.id.drawer);
         mDrawerList = (ListView)findViewById(R.id.navigation_list);
 
         mDrawerList.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, drawerOptions));
-
         getLocation();
-
-//        try {
-//
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        }
     }
 
 
@@ -102,7 +95,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
 
             SupportMapFragment mapFragment = (SupportMapFragment)getSupportFragmentManager().findFragmentById(R.id.map);
             mapFragment.getMapAsync(this);
-
+       // getTrekkingDatas();
 
    /*     Circle circle = mMap.addCircle(new CircleOptions()
                 .center(new LatLng(latitude, longitude))
@@ -408,7 +401,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
 //
 //            List<String> coordinates = routes.get(i).getCoordinates();
 //
-//                //TODO : resolve NuberFormat exception
+//
 //
 //
 //                for(int j=0;j<coordinates.size()-1;j++){
