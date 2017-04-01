@@ -23,7 +23,6 @@ import com.acro.hackathon.constants.ProviderType;
 import com.acro.hackathon.trekking.POJO.weather.ResponseData;
 import com.acro.hackathon.trekking.network.TrekkingRoutes;
 import com.acro.hackathon.trekking.network.WeatherDataInterface;
-import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -96,7 +95,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         mMap = googleMap;
         LatLng indore =new LatLng((latitude+0.05),(longitude+0.05));
         Marker laundary= mMap.addMarker(new MarkerOptions().position(indore).title("Your location"));
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 11.0f));
+     //   mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 11.0f));
 
 
             SupportMapFragment mapFragment = (SupportMapFragment)getSupportFragmentManager().findFragmentById(R.id.map);
@@ -382,7 +381,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
                 //TODO : resolve NuberFormat exception
 
 
-                for(int j=0;j<coordinates.size();j++){
+                for(int j=0;j<coordinates.size()-1;j++){
                     String coord1  =  coordinates.get(j);
                     String coord2 =  coordinates.get(j+1);
                     String coord1Arr[] = coord1.split("/");
