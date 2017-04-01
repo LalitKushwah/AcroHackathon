@@ -1,11 +1,14 @@
 package com.acro.hackathon.trekking;
 
+import android.app.Dialog;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
@@ -25,6 +28,7 @@ import com.acro.hackathon.trekking.POJO.routes.Treks;
 import com.acro.hackathon.trekking.POJO.weather.ResponseData;
 import com.acro.hackathon.trekking.network.TrekkingRoutes;
 import com.acro.hackathon.trekking.network.WeatherDataInterface;
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -37,6 +41,7 @@ import com.google.android.gms.maps.model.PolylineOptions;
 import org.json.JSONObject;
 
 import java.security.cert.CertificateException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.net.ssl.HostnameVerifier;
@@ -63,8 +68,12 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
     public TextView weatherText;
     private String drawerOptions[];
     JSONObject dataset;
+    Dialog dialog;
+    ArrayList<String> names;
     ListView mDrawerList;
     DrawerLayout mDrawerLayout;
+    int pos;
+    String treks[];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,13 +81,36 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         setContentView(R.layout.activity_main);
         weatherText=(TextView)findViewById(R.id.weatherText);
         LocationManager.setLogType(LogType.GENERAL);
-
         drawerOptions = getResources().getStringArray(R.array.drawer_options);
         mDrawerLayout = (DrawerLayout)findViewById(R.id.drawer);
         mDrawerList = (ListView)findViewById(R.id.navigation_list);
-
         mDrawerList.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, drawerOptions));
         getLocation();
+        names = new ArrayList<>();
+        names = getIntent().getStringArrayListExtra("names");
+        treks = getIntent().getStringArrayExtra("treks");
+
+
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Select a Trek");
+        builder.setItems(treks, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int item) {
+                // Do something with the selection
+                getTrekkingData(item);
+            }
+        });
+        AlertDialog alert = builder.create();
+        alert.show();
+
+
+        //TODO : Dialog
+
+
+
+
+
+
     }
 
 
@@ -90,12 +122,11 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         mMap = googleMap;
         LatLng indore =new LatLng((latitude+0.05),(longitude+0.05));
         Marker laundary= mMap.addMarker(new MarkerOptions().position(indore).title("Your location"));
-     //   mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 11.0f));
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 11.0f));
 
 
             SupportMapFragment mapFragment = (SupportMapFragment)getSupportFragmentManager().findFragmentById(R.id.map);
             mapFragment.getMapAsync(this);
-       // getTrekkingDatas();
 
    /*     Circle circle = mMap.addCircle(new CircleOptions()
                 .center(new LatLng(latitude, longitude))
@@ -105,22 +136,6 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
 */
 
 
-//            JSONArray routes = (JSONArray) dataset.get("routes");
-//            JSONObject route = (JSONObject) routes.get(0);
-//            JSONArray coordinates = (JSONArray)route.get("coordinates");
-//
-//            for(int i=0;i<coordinates.length()-1;i++){
-//                String coord1  = (String) coordinates.get(i);
-//                String coord2 = (String) coordinates.get(i+1);
-//
-//                String coord1Arr[] = coord1.split("/");
-//                String coord2Arr[] = coord2.split("/");
-//
-//
-//                Polyline line = mMap.addPolyline(new PolylineOptions()
-//                .add(new LatLng(Long.parseLong(coord1Arr[1]), Long.parseLong(coord1Arr[0])), new LatLng(Long.parseLong(coord2Arr[1]), Long.parseLong(coord2Arr[0])))
-//                .width(8)
-//                .color(Color.RED));
 
 
 
@@ -344,7 +359,9 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
     }
 
 
-    public void getTrekkingDatas(){
+    public void getTrekkingData(int position){
+pos = position;
+
         Retrofit adapter = new Retrofit.Builder()
                 .baseUrl("http://acrokids-ps11.rhcloud.com/")
                 .client(MainActivity.getUnsafeOkHttpClient())
@@ -370,7 +387,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
 
 
 
-                    List<List<Double>> coordinates = features.get(0).getGeometry().getCoordinates();
+                    List<List<Double>> coordinates = features.get(pos).getGeometry().getCoordinates();
                         int i=0;
                     do{
 
@@ -435,4 +452,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
             }
         });
     }
+
+
+
 }

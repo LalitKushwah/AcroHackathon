@@ -19,6 +19,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class IntroActivity extends AppCompatActivity {
 
     ArrayList<String> names;
+    String treks[] = new String[20];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,8 +53,13 @@ public class IntroActivity extends AppCompatActivity {
                 if (response.isSuccessful()) {
                     for (int i = 0; i <response.body().getFeatures().size() ; i++) {
                         names.add(response.body().getFeatures().get(i).getProperties().getName());
+                        treks[i] = response.body().getFeatures().get(i).getProperties().getName();
+
                     }
-                    startActivity(new Intent(IntroActivity.this, MainActivity.class));
+                    Intent i = new Intent(IntroActivity.this, MainActivity.class);
+                    i.putStringArrayListExtra("names", names);
+                    i.putExtra("treks", treks);
+                    startActivity(i);
                 }
             }
 
