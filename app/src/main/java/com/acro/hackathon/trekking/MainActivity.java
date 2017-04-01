@@ -88,6 +88,13 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         weatherText=(TextView)findViewById(R.id.weatherText);
         LocationManager.setLogType(LogType.GENERAL);
 
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
+
+
+
+
         retrofit=new Retrofit.Builder()
                 .baseUrl("http://192.168.0.105:80")
                 .client(getUnsafeOkHttpClient())
@@ -181,15 +188,11 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
     //Map related stuff
     @Override
     public void onMapReady(GoogleMap googleMap) {
-
         mMap = googleMap;
         LatLng indore =new LatLng((latitude),(longitude));
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 11.0f));
         Marker laundary= mMap.addMarker(new MarkerOptions().position(indore).title("Your location"));
 
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
 
         mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(latitude, longitude))
@@ -568,7 +571,8 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
                         Double lat2 = data.get(1);
 
 
-                        Polyline line = mMap.addPolyline(new PolylineOptions()
+                        Polyline line = mMap.addPolyline(
+                                new PolylineOptions()
                             .add(new LatLng(
                                     lat1,
                                     long1),
@@ -581,6 +585,9 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
 
 
                     }while(i<coordinates.size()-1);
+
+
+                    mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(coordinates.get(0).get(1), coordinates.get(0).get(0)), 9.0f));
 
 //            for(int i=0;i<routes.size();i++){
 //
