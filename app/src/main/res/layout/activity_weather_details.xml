@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_weather_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context="com.acro.hackathon.trekking.WeatherDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="#1ca8f4"
+        android:id="@+id/header"
+        android:layout_weight="4">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dayName"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_weight=".5"
+            android:paddingLeft="30dp"
+            android:text="\nToday, April 1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="3">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/maxTemp"
+                android:textSize="40sp"
+                android:paddingLeft="30dp"
+                android:layout_weight="1.5"
+                android:text="16"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:id="@+id/minTemp"
+                android:textSize="20dp"
+               android:layout_weight=".5"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:id="@+id/weatherImage"
+                android:layout_weight="1"
+                android:src="@mipmap/sun_image"/>
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:paddingLeft="40sp"
+    android:orientation="horizontal"
+    android:weightSum="2">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:textColor="#000"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationName"
+        android:text="Kerala"/>
+
+    <android.support.v7.widget.AppCompatCheckedTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:textSize="15sp"
+        android:id="@+id/weatherDiscription"
+        android:text="Clear"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/recyclerView"
+        android:layout_weight="6">
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+
+
+</LinearLayout>

@@ -8,15 +8,20 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.acro.hackathon.trekking.POJO.DangerMedical.DangerMedicalResponse;
 import com.acro.hackathon.trekking.POJO.mapDirection.MapDirectionResponse;
+import com.acro.hackathon.trekking.POJO.weather.List;
+import com.acro.hackathon.trekking.network.DangerMedicalCall;
 import com.acro.hackathon.trekking.network.MapDirectionCalls;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -28,9 +33,9 @@ import com.acro.hackathon.constants.FailType;
 import com.acro.hackathon.constants.LogType;
 import com.acro.hackathon.constants.ProviderType;
 import com.acro.hackathon.trekking.network.WeatherDataInterface;
-import com.google.android.gms.maps.model.Polyline;import com.google.android.gms.maps.model.PolylineOptions;
 
 import java.security.cert.CertificateException;
+import java.util.ArrayList;
 
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLContext;
@@ -52,7 +57,9 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
     public static Double latitude=10.057847,longitude=76.680466;
     private ProgressDialog progressDialog;
     public TextView weatherText;
-
+    public static ArrayList<List> weatherList=new ArrayList<>();
+    public static ArrayList<String> details=new ArrayList<>();
+    public Button danger,medical;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,10 +67,63 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         setContentView(R.layout.activity_main);
         weatherText=(TextView)findViewById(R.id.weatherText);
         LocationManager.setLogType(LogType.GENERAL);
+
+        Retrofit retrofitObj=new Retrofit.Builder()
+                .baseUrl("http://192.168.0.105:80")
+                .client(getUnsafeOkHttpClient())
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+       final DangerMedicalCall service=retrofitObj.create(DangerMedicalCall.class);
+
+        danger=(Button)findViewById(R.id.danger);
+        medical=(Button)findViewById(R.id.medical);
+
+
+
+        danger.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (v.getId() == R.id.danger) {
+                    Call<DangerMedicalResponse> responseCall = service.sendDangerMedical("6545665","y","n");
+                    responseCall.enqueue(new Callback<DangerMedicalResponse>() {
+                        @Override
+                        public void onResponse(Call<DangerMedicalResponse> call, Response<DangerMedicalResponse> response) {
+
+                        }
+
+                        @Override
+                        public void onFailure(Call<DangerMedicalResponse> call, Throwable t) {
+
+                        }
+                    });
+                }
+                else {
+                    Call<DangerMedicalResponse> responseCall = service.sendDangerMedical("6545665","y","n");
+                    responseCall.enqueue(new Callback<DangerMedicalResponse>() {
+                        @Override
+                        public void onResponse(Call<DangerMedicalResponse> call, Response<DangerMedicalResponse> response) {
+
+                        }
+
+                        @Override
+                        public void onFailure(Call<DangerMedicalResponse> call, Throwable t) {
+
+                        }
+                    });
+
+
+                }
+            }
+
+
+
+        });
+
+
         weatherData();
         getLocation();
     }
-
 
 
     //Map related stuff
@@ -77,6 +137,12 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        mMap.addMarker(new MarkerOptions()
+                .position(new LatLng(latitude, longitude))
+                .title("San Francisco").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
+
+
 
 
     }
@@ -264,22 +330,30 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
 
     //For gettting weather data (temp,wind,humid etc)
     public void weatherData() {
+            weatherList.clear();
         Retrofit login = new Retrofit.Builder()
                 .baseUrl("http://api.openweathermap.org/")
                 .client(getUnsafeOkHttpClient())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         WeatherDataInterface services = login.create(WeatherDataInterface.class);
-        Call<ResponseData> weatherDataResponse = services.getWheatherReport(String.valueOf(latitude),String.valueOf(longitude),"e415c72a39337b04fc6749b09b2406f3","metric");
+        final Call<ResponseData> weatherDataResponse = services.getWheatherReport(String.valueOf(latitude),String.valueOf(longitude),"e415c72a39337b04fc6749b09b2406f3","metric");
         weatherDataResponse.enqueue(new Callback<ResponseData>() {
             @Override
             public void onResponse(Call<ResponseData> call, Response<ResponseData> response) {
+
+                details.clear();
                 weatherText.setText("weather-"+response.body().getList().get(0).getMain().getTemp()+(char) 0x00B0 +"C/"+response.body().getList().get(0).getWeather().get(0).getMain());
+                weatherList.addAll(response.body().getList());
+
+                details.add(response.body().getList().get(0).getMain().getTempMax());
+                details.add(response.body().getList().get(0).getMain().getTempMin());
+                details.add(response.body().getList().get(0).getWeather().get(0).getDescription());
             }
 
             @Override
             public void onFailure(Call<ResponseData> call, Throwable t) {
-                Log.d("Failure",t.getMessage());
+                Log.d("Failure",t.getMessage().toString());
             }
         });
 
@@ -307,6 +381,68 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
        });
    }
 
+    public void callWeather(View v) {
+        Intent i=new Intent(MainActivity.this,WeatherDetailsActivity.class);
+        startActivity(i);
+    }
 
+
+
+    /*public void callDangerMedical(View v) {
+        String mobile,danger,medical;
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("http://192.168.0.105:80/")
+                .client(getUnsafeOkHttpClient())
+                .addConverterFactory(GsonConverterFactory.create());
+
+        switch (v.getId()) {
+            case R.id.danger:
+                mobile="74845454";
+                danger="y";
+                medical="n";
+                DangerMedicalCall service=retrofit.create(DangerMedicalCall.class);
+                Call<DangerMedicalResponse> responseCall=service.sendDangerMedical(new PostDataForMedicalAndDanger(mobile,danger,medical));
+                responseCall.enqueue(new Callback<DangerMedicalResponse>() {
+                    @Override
+                    public void onResponse(Call<DangerMedicalResponse> call, Response<DangerMedicalResponse> response) {
+
+                    }
+                    @Override
+                    public void onFailure(Call<DangerMedicalResponse> call, Throwable t) {
+
+                    }
+                });
+              break;
+            case R.id.medical:
+                mobile="74845454";
+                danger="n";
+                medical="y";
+                DangerMedicalCall service2=retrofit.create(DangerMedicalCall.class);
+                Call<DangerMedicalResponse> responseCall2=service2.sendDangerMedical(new PostDataForMedicalAndDanger(mobile,danger,medical));
+                responseCall2.enqueue(new Callback<DangerMedicalResponse>() {
+                    @Override
+                    public void onResponse(Call<DangerMedicalResponse> call, Response<DangerMedicalResponse> response) {
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<DangerMedicalResponse> call, Throwable t) {
+
+                    }
+                });
+                break;
+        }
+
+    }*/
+    public static class PostDataForMedicalAndDanger {
+        String mobile,danger,medical;
+        public PostDataForMedicalAndDanger(String mobile,String danger,String medical) {
+            this.mobile=mobile;
+            this.danger=danger;
+            this.medical=medical;
+        }
+
+
+    }
 
 }

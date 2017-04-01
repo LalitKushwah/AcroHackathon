@@ -29,6 +29,7 @@
             android:value="AIzaSyA8apU-Fh7PxM9HIL27N8bqzdfpeZaPujQ" />
 
         <activity android:name=".NearByPlacesActivity" />
+        <activity android:name=".WeatherDetailsActivity"></activity>
     </application>
 
 </manifest>

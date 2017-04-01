@@ -16,6 +16,12 @@
             android:layout_height="wrap_content"
             android:hint="Loading weather condition..."
             android:id="@+id/weatherText" />
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="demo"
+            android:onClick="callWeather"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -119,6 +125,8 @@
             android:layout_width="0dp"
             android:layout_weight="1.4"
             android:text="Danger"
+            android:onClick="callDangerMedical"
+            android:id="@+id/danger"
             android:background="@drawable/hollow_red_button"
             android:layout_height="wrap_content" />
         <TextView
@@ -130,6 +138,8 @@
             android:layout_width="0dp"
             android:layout_weight="1.4"
             android:text="Medical"
+            android:onClick="callDangerMedical"
+            android:id="@+id/medical"
             android:background="@drawable/hollow_med_button"
             android:layout_height="wrap_content" />
 
