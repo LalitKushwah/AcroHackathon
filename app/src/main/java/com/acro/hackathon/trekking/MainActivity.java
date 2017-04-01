@@ -49,7 +49,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends LocationBaseActivity implements OnMapReadyCallback {
     private GoogleMap mMap;
-    public static Double latitude=9.9312,longitude=76.2673;
+    public static Double latitude=10.057847,longitude=76.680466;
     private ProgressDialog progressDialog;
     public TextView weatherText;
 

@@ -5,23 +5,19 @@ package com.acro.hackathon.trekking.adapter;
  */
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
+import com.acro.hackathon.trekking.MainActivity;
 import com.acro.hackathon.trekking.NearByPlacesActivity;
 import com.acro.hackathon.trekking.R;
 import com.squareup.picasso.Picasso;
-
-import java.io.File;
-import java.net.URI;
 import java.util.ArrayList;
 
 
@@ -34,13 +30,17 @@ public class NearByPlacesList extends RecyclerView.Adapter<NearByPlacesList.Text
     ArrayList<String> name=new ArrayList<>();
     ArrayList<String> images=new ArrayList<>();
     ArrayList<String> distance=new ArrayList<>();
+    ArrayList<Double> destinationLatitude=new ArrayList<>();
+    ArrayList<Double> destinationLongitude=new ArrayList<>();
     Context context;
 
-    public NearByPlacesList(ArrayList<String> resultArrayList,ArrayList<String> images,ArrayList<String> distance,Context context) {
+    public NearByPlacesList(ArrayList<String> resultArrayList,ArrayList<String> images,ArrayList<String> distance,ArrayList<Double> destinationLatitude,ArrayList<Double> destinationLongitude,Context context) {
         this.name=resultArrayList;
         this.images=images;
         this.context=context;
         this.distance=distance;
+        this.destinationLatitude=destinationLatitude;
+        this.destinationLongitude=destinationLongitude;
     }
     @Override
     public TextViews onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -57,7 +57,13 @@ public class NearByPlacesList extends RecyclerView.Adapter<NearByPlacesList.Text
         holder.getCardView().setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "Clicked", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
+                        Uri.parse("http://maps.google.com/maps?saddr="+MainActivity.latitude+","+MainActivity.longitude+"&daddr="+destinationLatitude.get(position)+","+destinationLongitude.get(position)));
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                intent.addCategory(Intent.CATEGORY_LAUNCHER );
+                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                context.startActivity(intent);
+                context.startActivity(intent);
             }
         });
 

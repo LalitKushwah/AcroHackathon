@@ -2,6 +2,7 @@ package com.acro.hackathon.trekking;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Canvas;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -11,8 +12,10 @@ import android.widget.TextView;
 
 import com.acro.hackathon.trekking.POJO.nearByLocation.Result;
 import com.acro.hackathon.trekking.adapter.NearByPlacesList;
+import com.acro.hackathon.trekking.utils.SharedPrefUtil;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
@@ -38,10 +41,12 @@ public class NearByPlacesActivity extends AppCompatActivity {
      String latitude,longitude;
      RecyclerView recyclerView;
      LinearLayoutManager lm;
-    NearByPlacesList adapter;
-    ArrayList<String> images=new ArrayList<>();
-    ArrayList<String> name=new ArrayList<>();
-    ArrayList<String> distance=new ArrayList<>();
+     NearByPlacesList adapter;
+     ArrayList<String> images=new ArrayList<>();
+     ArrayList<String> name=new ArrayList<>();
+     ArrayList<String> distance=new ArrayList<>();
+     ArrayList<Double> destinationLat=new ArrayList<>();
+     ArrayList<Double> destinationLng=new ArrayList<>();
     Context context;
     TextView title;
 
@@ -58,7 +63,7 @@ public class NearByPlacesActivity extends AppCompatActivity {
         lm=new LinearLayoutManager(NearByPlacesActivity.this);
         recyclerView.setLayoutManager(lm);
         title=(TextView)findViewById(R.id.title);
-        adapter=new NearByPlacesList(name,images,distance,context);
+        adapter=new NearByPlacesList(name,images,distance,destinationLat,destinationLng,context);
         recyclerView.setAdapter(adapter);
 
 
@@ -79,18 +84,22 @@ public class NearByPlacesActivity extends AppCompatActivity {
                 .build();
 
         NearByLocation service=retrofit.create(NearByLocation.class);
-        Call<NearByLocationResponse> nearByLocationResponseCall=service.serachNearByLocation(latitude+","+longitude,50000,type,"AIzaSyBMD05Jxc4JmbVNQSzIn9UC-6HcrbnO6F0");
+        Call<NearByLocationResponse> nearByLocationResponseCall=service.serachNearByLocation(MainActivity.latitude+","+MainActivity.longitude,50000,type,"AIzaSyBMD05Jxc4JmbVNQSzIn9UC-6HcrbnO6F0");
         nearByLocationResponseCall.enqueue(new Callback<NearByLocationResponse>() {
             @Override
             public void onResponse(Call<NearByLocationResponse> call, Response<NearByLocationResponse> response) {
                 name.clear();
                 images.clear();
+                destinationLat.clear();
+                destinationLng.clear();
 
 
                 Log.d("size",String.valueOf(response.body().getResults().size()));
                 for(int i=0;i<response.body().getResults().size()-1;i++) {
                     name.add(response.body().getResults().get(i).getName());
                     distance.add(String.valueOf(distFrom(MainActivity.latitude,MainActivity.longitude,response.body().getResults().get(i).getGeometry().getLocation().getLat(),response.body().getResults().get(i).getGeometry().getLocation().getLng())));
+                    destinationLat.add(response.body().getResults().get(i).getGeometry().getLocation().getLat());
+                    destinationLng.add(response.body().getResults().get(i).getGeometry().getLocation().getLng());
                     if(response.body().getResults().get(i).getPhotos()==null) {
                         images.add("CnRtAAAATLZNl354RwP_9UKbQ_5Psy40texXePv4oAlgP4qNEkdIrkyse7rPXYGd9D_Uj1rVsQdWT4oRz4QrYAJNpFX7rzqqMlZw2h2E2y5IKMUZ7ouD_SlcHxYq1yL4KbKUv3qtWgTK0A6QbGh87GB3sscrHRIQiG2RrmU_jF4tENr9wGS_YxoUSSDrYjWmrNfeEHSGSc3FyhNLlBU");
                     }
