@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name" translatable="true">Trek Live</string>
+    <string name="weather_loading" translatable="true">Chargement m�t�o ...</string>
+    <string name="search_hint" translatable="true">Cherche ici�</string>
+    <string name="near_by" translatable="true">Proche</string>
+    <string name="emergency_services" translatable="true">Services d\'urgence</string>
+    <string name="danger" translatable="true">Danger</string>
+    <string name="medical" translatable="true">M�dical</string>
+    <string name="name" translatable="true">Pr�nom</string>
+    <string name="navigate">Naviguer</string>
+    <string name="tal_line">PARCE QUE NOUS VOUS PROMETONS UNE AVENTURE S�CURIS�E</string>
+    <string-array name="drawer_options">
+        <item>Accueil</item>
+        <item> Profil</item>
+        <item>Treks</item>
+        <item>Trajets termin�s</item>
+        <item>Contact</item>
+        <item>Sur</item>
+        <item>Connectez - Out</item>
+    </string-array>
+</resources>

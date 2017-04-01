@@ -3,39 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="a136366045678579300d161de97c2211c4c4f7a0">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-9.6.1_0b5cc54aa7cf450dc5792a8c88f3bb84335444b0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="4df40545c9b875855f3dd9d4928e5d07f07c20ba">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-crash-9.6.1_6be529a5c3a285ad1ee8b854d96cc10d70dc4c6f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="0e0e0681c26a1f575d3e4c542182dd59bab75fd6">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-9.6.1_dba85d5f9985dd235db91beab785653577d78b1b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="90be14317e3f26d18438e8dbf8544500d1dfe07f">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-awareness-9.6.1_b1baa5261fd9acc70a3f67f5d4171bdf87082d40/classes.dex" />
+        sha1="e7157a9577c983651d6c6ee313813424fe2d8ab6">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-10.2.0_272fe2dee0303aee145d3051d9a03e77a76a9b98/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -48,39 +21,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="518adc52081d41724932b41bc132e4d50a352b86">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-9.6.1_3f332bd7ba7f8b406691a96366f64410f5d11241/classes.dex" />
+        sha1="74c5a91d6510ad42410e8a047d90d2ea6721a0e0">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-10.2.0_942233faac5b4006cd243d0aff8191d1ff098e23/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="ac8365c87591065db07f7bac8551504504832cd4">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.6.1_b72ed7aa3a6882fb23b7caeb6168a4d4d1d26a21/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="465f40f840e583f8b7421a3aacf3fbf08c28f00a">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.6.1_7c0d79d561941b5f4481c32fc97efbbfd3b0ef44/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="babb25794a7599069d34705038744c5760a9a88c">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-instantapps-9.6.1_dee242fee1c1c6ddde147bdc8fcc70e9bcb85d82/classes.dex" />
+        sha1="3d6951cb416ebf8c66a32b9480808ca247b68344">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-10.2.0_ad1d0ad8c5f5dc071dae2f800722dea97084fe09/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -111,39 +66,30 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="ee61ace5f3e488fc610e1c67693c49186a441f32">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-9.6.1_e4350674395eb79022b1268638d0435a6f685f61/classes.dex" />
+        sha1="3d13e510077b35fe8e49930a627dd849ad5da0dc">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-10.2.0_f0159d0340f5f88a5011987f7ff94815cbd1df37/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="6ffe8b28ab61e5ee92ab9431a220379790c71ddf">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.6.1_794be748ca58239ad02fcb1527c43aafdbb43cb8/classes.dex" />
+        sha1="75575883f0348fc5d2be85f23bd10b050095cf17">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-10.2.0_a48e01b9e1989120b6600379b086bdfd5dc2f450/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.2.0_2906a89382399f4c272966152dd318e36d6bf20e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="ee0ccb43f6ab276191b7f2d77c305fa9beb26db9">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-9.6.1_749793ee283d9eca1ad9d46356808329e262616d/classes.dex" />
+        sha1="db48dfabe8ecc46681ceca418d6bd61a5339f818">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-10.2.0_e3396d273c8f0f29c550a299c4942f50906573ca/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -165,21 +111,57 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="47bbb3ec4b31ba71e125241c090dabe70cbb4de7">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.6.1_9cbcd8d681f08bec81fe86b4b7b74f8c7803a931/classes.dex" />
+        sha1="ca82d5800780b1d53f0f9ab43678d8634a34cddc">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-10.2.0_52bfe02f76e2973c44ff4f2a4ca6fc4a1d7b2bd7/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="d45c048bb1c55cf963899190e507065aea8e5be9">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-9.6.1_1d4756d0e1ad47f8cd312604f65a467982ef4074/classes.dex" />
+        sha1="bd75f9f0296fe220da6d0ad961831b04541c4452">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-10.2.0_5c1f76a8fa4b6f4aa4abb1d5a0fca97be36660e4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="6da05b7498da036b5b37c3beb861cd2060929dcd">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-10.2.0_59c48a5a91201cbc762d5aa508a0d634c4c88481/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="ddb7fed808f4331174b59428ccfc46b3696c9812">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-10.2.0_01e7f8864f4005036f3a7e7a5b2d947e7662cc6b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="1df6d719c4e264d66bb98baa5cb637495b8cca66">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-10.2.0_274e0301afe11c220721db69a1b340ac2af627f8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="0f58195bee8a08f35e7d4ee7fd4b0479e570e172">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-crash-10.2.0_c42e498616a381691e748fe65de20b9a419a2a60/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -187,7 +169,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="22d444a1b1d656480f1f2c3b44c03ab1979ca0ff">
+        sha1="4210de151ac661d447174c583b98145bc7fb5b4a">
         <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ab074f37f28dc4be74aee1ed1dd8576bab6062ef/classes.dex" />
     </item>
     <item
@@ -201,6 +183,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/ps11/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_59804364520f02bda5317187841d6a9229019140/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -210,21 +201,39 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="0dfc12e4aacf514346ea866560c99807d032bc48">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-9.6.1_87fa9a79114c17a8f00442c7fe55d9387468c54a/classes.dex" />
+        sha1="3aaf1e7b5fe9f4d3ff22c4edc0ead631f7389d30">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-10.2.0_9af07f5103438f08d08499be03261516c21d1b78/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-appindexing/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="4a36600281a648769411ef642c331851732bf29e">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.6.1_780ba7521f1564ecfa5b532e89478481e01aa009/classes.dex" />
+        sha1="1fbf3733f36fea63e70373212796e70f9079981f">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-appindexing-10.2.0_bf2c909604025f0007619979e16d6be6394ebec2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_39057cf23fc9ec27580da8bdca2f8f3f6347fa6b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="0e301f24b283f14b564f660c9abe863af6be5896">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-10.2.0_6a0e67b160eee838fa777df1de98ee75f3fa958a/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -237,12 +246,30 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="62ff84124b89177abc0c27f3e38c9732f2d41617">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-9.6.1_d1a4ff41cc09d62547a621490bb61d7ed035ac4f/classes.dex" />
+        sha1="8fd2e9eadc9d214966ee7f60d6c5a17a335d7533">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-framework-10.2.0_ef4dad86c14b4416d5a8c31da34766163f46a0e0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="0d5cbbbfe040201c7569478b70a13b58fd11aab4">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-10.2.0_b5c4cdd61c5d176c1731052adacc70d40fbdc76c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_2939e4a1307da3aa27262203ff5f1648e28f8cef/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -255,39 +282,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-v4-impl/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="526f4b02f1771fa7607ff1b89fe2e9bd0344fee8">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-9.6.1_5b1e12fb8eabadd8f6c4c1963ffc23a3f653805c/classes.dex" />
+        sha1="8438c64f9eb581429dc592f7c9b3156a3d071653">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-v4-impl-10.2.0_3095d7d6fc6f480d933be41d14f739e347543145/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="159494eb362396d073d8c922b77e40c0da5fc5bc">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-9.6.1_7a013f4133cbd6d1d7f2999768296a8da2880832/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.6.1_fd33ac60ec58ecff5d5370f61049939989f45e3c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.6.1_66c8d4bd361b1f5c92efa58b1ba328d79780c3f5/classes.dex" />
+        sha1="1bab75be1918fc9871be4da7afe38d7e4d308303">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-10.2.0_9872484e1d341007eecb6cd411d5d44aadde11b3/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -300,30 +309,30 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="da3f763afd39da1c947d9442847c837e9182a09f">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.6.1_2766e3c06264dac7bcbc53193600b192240a5b7b/classes.dex" />
+        sha1="421a5cebe9ff187c98075c59786e9464c5c67d36">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-10.2.0_b936120b1b3644b768427af0f1dcc8eae453463a/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.2.0/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="152de8da301561dcb0946471697a420d8f7a68c5">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.2.0_2e1f9aaf1fcfd503f0f64b3c94bbfe921bfb8b4e/classes.dex" />
+        sha1="aa23e4589287adb431ef59d6c78af79ab8885682">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-10.2.0_ba9bd9ef9516110779d21c17660b108198af6753/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="8ebae43cd06058e99e08c8b4d305b72f2b9927c6">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-9.6.1_efa9982cf428cc3420685d773f444758d8acc60f/classes.dex" />
+        sha1="654b294d429b56fd18392f2b68ad79954f431f8e">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-10.2.0_a81c12e97b047e5cbcae74d6955a469b04ed025d/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -336,6 +345,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="423fb69e69759d8b726fa4a4fb6a1ea9fc86d1cd">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-instantapps-10.2.0_198b6cc926b0c06b5973e68d43117882c36729fb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/libs/internal_impl-24.0.0.jar"
         jumboMode="true"
         optimize="true"
@@ -345,30 +363,39 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="af7582c6b327449c6d32518e6a10307860b7b5d6">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.6.1_d52438e6b74502cc921c3236a03a56f555add5f2/classes.dex" />
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.1_bb69bddc6703842ca31a9b577df709ae74f30536/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="ad7706f8bb4a985656a8d2142f74021c8b0e03d8">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-9.6.1_7045d1b293077657d232ca1646157465b10379c5/classes.dex" />
+        sha1="9d1d0e1270310e34e2d65afda2bc18605c14cd46">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-10.2.0_343b76d7a8f0cc9ef664de66d988888428300096/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="c4394d46152165cd3256fb711ac94f66a28fbae1">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-9.6.1_c34febbc0f0617089479c22979ff2104358b9370/classes.dex" />
+        sha1="90270132a5f1a33584f453c571257dd35e728201">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-10.2.0_b33f35acb19db7a86444e7ce39694feec91409ff/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="8e1d31656bc9f1889283836e025e6cb703acd38a">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-10.2.0_efe7783f6a8d513728352f6194b75842f50dd7bd/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -381,39 +408,93 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="6ff796a3173787afe2e712f3aec6f5b99796118e">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-9.6.1_4c1b065aa4f476a3a754543e70bd04744b5045e9/classes.dex" />
+        sha1="444f9de23145e8caba7bf1c1772acad142ea6013">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-10.2.0_f507ffa776bd901712a86d93ce6629d357a3cefc/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="0efd1b44f47c134fb245914a1d54a55adbfc2f8d">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.6.1_fa6ea190429b67133a05d2acd166c77910c575e3/classes.dex" />
+        sha1="646b2c48e147b943f0a39842457fdc66d501e4b6">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-10.2.0_25b7603e919b2064683a1bdc8f582170a346e26e/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="2a18547ea91d258866d132c2a763185f15b01b25">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-9.6.1_0b979c7a104daa78bbe9567cfb15a1d3cc0016d2/classes.dex" />
+        sha1="ea03bbfaed89818f233ee9918fac493f2b63895a">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-10.2.0_62d2f442243e90a89ec88da284c148a7aefc73dd/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="80dd8bea08bc5fe10b10a3243b8279c856ccc690">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.6.1_a23b5e00ce8a78ce8463670f61e5a9d101f713fa/classes.dex" />
+        sha1="db4aca1c1ec60f2c098d3b6c91cedfb7838f83ed">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-10.2.0_1149f0d723a93c5c03e1e8df8ab5625110b35907/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="48532a016bb0dfbe7970c147ce784598a515406b">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-10.2.0_25875c0dbe6af51857bb144d0e14f8574e9303a5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_c86ccfa24a920698e33bc58cc488fb8870421bca/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="a61e7010aa7be5da53cd1bc5279630510c9a4912">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-10.2.0_9b139dbb423adc3f586e804f574184fcb8f5ed4e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="a9493f008850469ed3fab9b28658919562882aed">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-10.2.0_44b1f89358088b45694998466ac30860821da674/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="45e0953544711e0b5a2d227732e88cccb82793bc">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-awareness-10.2.0_2c03c633b8cbc04b96cc5fc3733fcc4bef030cd3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7d14fe9bd2283b2eb7fcab08458aa0357917e138">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-10.2.0_c4dd8d78aa861d46cae1f933e356129c38fbe91e/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -426,48 +507,39 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="79f521967ad7f49b34748db89df02852c2b2f87b">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-9.6.1_d1c9e38ffb9155deba4e0c53e822807ed88077aa/classes.dex" />
+        sha1="b831d3902674d096189451d46fce219e2c2904b7">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-10.2.0_2a8eeade0b9f82abe071e374624be28bbacb10af/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="a1c351dc10b92d638da57f3a6513f87cfbdc9f83">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.6.1_493e28bf6d7e159d450c16fb72d0572494e04c60/classes.dex" />
+        sha1="1ac56e5801e986583cbe27f2cce57f626cc7ff93">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-10.2.0_bc07edc90a8a9ea41610d803ed42d9e93313cb3e/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.2.0_dc581dd7322ef4115cab78a85185685615bab32e/classes.dex" />
+        sha1="ce9112e08a027c8620ae693983e38cdbb9f6371b">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-10.2.0_54278193f31e2daff5769a3ee32beac9926bcbbe/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="f0e96478ca3147bc588aadb9ae467d85b42473cc">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-9.6.1_e39e291a79b449e248d504a050b275d3e00b8d58/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="0cae6511c5705869cacf199f8abb0ea84cd10157">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-9.6.1_15f76760f751c5898c8065b5b1ee033bb1f88109/classes.dex" />
+        sha1="857ce7350acf811749c8fd0254d3d39b02aa71f5">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-10.2.0_6ffc357642919c25e6383678d5bf36daaa24b33d/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -480,12 +552,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="dfcba20b85ef3669a8ced0a8760a6df281cbd7c7">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-9.6.1_19da5cb0d71dcd0063181d05066ea2d17e09f043/classes.dex" />
+        sha1="3f4483afd050f3be12db7838422309446a45daa1">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-10.2.0_ded6ae9c29d3e99235fa15de9fd758853a9b62a4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="94fca868854457ede6df15c902938468c71d579e">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-10.2.0_06ccec1f0aae3107b74e91482e353ca0d5805c70/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -507,39 +588,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.2.0_23ad12dadcee2435f2cfdd30431fb65ad43564ca/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="cdddf21e0a8205e9955661061d1735ed10e44a7b">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-9.6.1_e79a1cc643d8bfc37b648a78f34cd7e6b67ed2b5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="8c6ef5bd4072f8cda2b89d8356ea7d8acd0683aa">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-9.6.1_13920a8416f4646a7cdf6011b03e4b46f700006c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="cf2c4e6607c77b0e671dc5ca252c5ea0d9c1ce0d">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-9.6.1_b909f199a72f1a8482cbd1b14f05d690d38c728e/classes.dex" />
+        sha1="ab0c7fe28f9506302eb39adf1ebf5858732e18ec">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-10.2.0_f5315348e752ee3967aca6c1bd8c8c42b9826645/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -552,30 +606,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="f6aa7c76cbaa867e05dbad0afab1ef0e65c4e55f">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-9.6.1_a6ea1ee0889d8847090b0d701e03aaa9696f30e4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="96e33a7aaee00ab64270e2a9887b8f9ef32c8b73">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-24.2.0_9ee2e390af5fddbf3c6124777abcf4154a80824d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="a76a6983a23788b3689524d4bed763955afbd306">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-9.6.1_3bd584fbb835584956e523b95f4147a54ad6a17a/classes.dex" />
+        sha1="4e01b82d664e1a8253b2b9658e74b5da35c8771d">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-10.2.0_9ba5ea74235cadd702a019f6b9ff9eba4a945de0/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -588,39 +624,30 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="9c0cf3d4f9d7d076f301e110b92e18ae23da12c2">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-framework-9.6.1_42add0f8da20cd29fd0121cb3c51e22367b9870d/classes.dex" />
+        sha1="d08bb32b88df3dbcbe1d498c3c57f020b8c521ec">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-10.2.0_56b4b6c8a5fbe2c7303ba7e6797fb761e636ab6a/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="77558e74bb2056ef38516296f13a27c4c4fc3e5c">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-common-9.6.1_5c363c02895d9ecbcfd73e255a5995ac11effb7b/classes.dex" />
+        sha1="68485f21eeb5d6c9ed82c445d520b9fc81c87108">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-10.2.0_f315233f83614b870834e8f30a51d1b0e35480ad/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="ff9be0a1e75a21c372735930d8987a55b5e6065f">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-9.6.1_98c19df192be1e2bfc4b47354caf853566eb3c09/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="1ef72e72bc0d05602c366582afa9439f58bb31d6">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.6.1_31cbd15b42c9e8de4332701b70b98b1d2cbd5a7d/classes.dex" />
+        sha1="4ef2d91da513c4d7e773ae438fe04d0e4c135957">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-10.2.0_3f61a67a59b7df6d2b1b269b3d563a085a39ce44/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -633,21 +660,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="cc39b4bcc9e7062891db90d5a752fa9e4986f447">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.6.1_0fa859ed1dcd4b3290684e267a8943644daf6d99/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="1810ae0df0a1b9b539ce97df54e96f2bf8f5ff94">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-9.6.1_c6a5c9625d33222fc723a383a2298ed33843e962/classes.dex" />
+        sha1="a3f7595ca32e614b454ceb7b7e241bb037a28e86">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-10.2.0_79c9c76c4b4c51dbb1f6da0379907d57cf0c47da/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -655,17 +673,8 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="4a6e18e1f0d82e1ff35e06c9fa11fd131436b16c">
+        sha1="afcded17d5e98aeff8ed81f431a8867740e2723c">
         <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_60ee6cea29211435db1b93b1a7e418f428138e99/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="f8db47be01cbe8cfa81e9cecce5ff1371ed1ad95">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-9.6.1_b924be7e9d680c9afebf5b91d60bb622195bc769/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -678,21 +687,30 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="c828add497d2b7a3de7c047bf72050cd4b7521a1">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-9.6.1_c94351a3fba0a215e85b2bf253f3f589c324317a/classes.dex" />
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-24.2.1_8e5ff79913146f4cb4586bb206994c73bc3a6235/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.6.1/jars/classes.jar"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="b75ecdd04a37d31b4a0da2729fc5c558962a529b">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.6.1_738df57f5bfeed36a7b67843e7ec161f52416947/classes.dex" />
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_b86af9e466f682f29c1e43fb9b5c75da445f1b80/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="101393e975eaf36e3ff40b277ee9a019e077afef">
+        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-10.2.0_927ce59aac965d9eb43ddf2d37142d20339b546b/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -702,15 +720,6 @@
         revision="24.0.1"
         sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
         <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.8.0_d29b7c43ea5bbd1d4759e57306ea6aa6150e466e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="a53ac0560ab915a02c50d2e5c7b003381e6fb5e3">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-9.6.1_60698f79978f6de57469343d744067ffc3e50ca6/classes.dex" />
     </item>
 
 </items>

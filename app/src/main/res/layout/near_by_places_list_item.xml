@@ -57,7 +57,7 @@
             android:textColor="#1f81ea"
             android:layout_marginTop="4dp"
             android:padding="4dp"
-            android:text="Navigate"
+            android:text="@string/navigate"
             android:layout_below="@id/distance"
             android:background="@drawable/hollow_blue_button"
 

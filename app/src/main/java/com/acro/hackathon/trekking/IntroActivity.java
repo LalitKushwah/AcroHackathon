@@ -19,7 +19,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class IntroActivity extends AppCompatActivity {
 
     ArrayList<String> names;
-    String treks[] = new String[20];
+    String treks[] = new String[14];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

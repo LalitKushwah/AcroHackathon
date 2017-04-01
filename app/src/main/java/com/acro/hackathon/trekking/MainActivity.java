@@ -79,7 +79,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
     ListView mDrawerList;
     DrawerLayout mDrawerLayout;
     int pos;
-    String treks[];
+    String treks[]= new String[14];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
