@@ -9,14 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50b50218-672c-499e-bac4-b4b2770906b6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/acro/hackathon/trekking/InstructionActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_instruction.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/acro/hackathon/trekking/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/acro/hackathon/trekking/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-    </list>
+    <list default="true" id="50b50218-672c-499e-bac4-b4b2770906b6" name="Default" comment="" />
     <ignored path="AcroHackathon.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,8 +44,8 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/acro/hackathon/trekking/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="356" column="56" selection-start-line="356" selection-start-column="36" selection-end-line="356" selection-end-column="56" />
+            <state relative-caret-position="296">
+              <caret line="514" column="0" selection-start-line="514" selection-start-column="0" selection-end-line="514" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5893#6114#0" expanded="true" />
@@ -66,15 +59,15 @@
                 <element signature="method#dismissProgress#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#setText#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#getUnsafeOkHttpClient#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#14997#15189#0" expanded="true" />
-                <element signature="e#15188#15189#0" expanded="true" />
+                <element signature="e#14988#15180#0" expanded="true" />
+                <element signature="e#15179#15180#0" expanded="true" />
                 <element signature="method#weatherData#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#mapDirectionData#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#callWeather#0;class#MainActivity#0" expanded="false" />
                 <element signature="class#PostDataForMedicalAndDanger#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#getTrekkingData#0;class#MainActivity#0" expanded="false" />
-                <marker date="1491072839363" expanded="false" signature="4199:4565" ph="{...}" />
-                <marker date="1491072839363" expanded="false" signature="4797:5163" ph="{...}" />
+                <marker date="1491074069075" expanded="false" signature="4199:4565" ph="{...}" />
+                <marker date="1491074069075" expanded="false" signature="4797:5163" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -86,8 +79,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="35" column="44" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="44" />
+            <state relative-caret-position="270">
+              <caret line="18" column="38" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -96,8 +89,8 @@
       <file leaf-file-name="InstructionActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/acro/hackathon/trekking/InstructionActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+            <state relative-caret-position="476">
+              <caret line="43" column="9" selection-start-line="27" selection-start-column="7" selection-end-line="43" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -129,7 +122,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-882">
+            <state relative-caret-position="-972">
               <caret line="87" column="36" selection-start-line="87" selection-start-column="29" selection-end-line="87" selection-end-column="36" />
               <folding />
             </state>
@@ -3466,9 +3459,9 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/acro/hackathon/trekking/network/DangerMedicalCall.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/acro/hackathon/trekking/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_instruction.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/acro/hackathon/trekking/InstructionActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/acro/hackathon/trekking/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -4172,15 +4165,15 @@
             <element signature="method#dismissProgress#0;class#MainActivity#0" expanded="false" />
             <element signature="method#setText#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getUnsafeOkHttpClient#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#14997#15189#0" expanded="true" />
-            <element signature="e#15188#15189#0" expanded="true" />
+            <element signature="e#14988#15180#0" expanded="true" />
+            <element signature="e#15179#15180#0" expanded="true" />
             <element signature="method#weatherData#0;class#MainActivity#0" expanded="false" />
             <element signature="method#mapDirectionData#0;class#MainActivity#0" expanded="false" />
             <element signature="method#callWeather#0;class#MainActivity#0" expanded="false" />
             <element signature="class#PostDataForMedicalAndDanger#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getTrekkingData#0;class#MainActivity#0" expanded="false" />
-            <marker date="1491072839363" expanded="false" signature="4199:4565" ph="{...}" />
-            <marker date="1491072839363" expanded="false" signature="4797:5163" ph="{...}" />
+            <marker date="1491074069075" expanded="false" signature="4199:4565" ph="{...}" />
+            <marker date="1491074069075" expanded="false" signature="4797:5163" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -4328,15 +4321,15 @@
             <element signature="method#dismissProgress#0;class#MainActivity#0" expanded="false" />
             <element signature="method#setText#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getUnsafeOkHttpClient#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#14997#15189#0" expanded="true" />
-            <element signature="e#15188#15189#0" expanded="true" />
+            <element signature="e#14988#15180#0" expanded="true" />
+            <element signature="e#15179#15180#0" expanded="true" />
             <element signature="method#weatherData#0;class#MainActivity#0" expanded="false" />
             <element signature="method#mapDirectionData#0;class#MainActivity#0" expanded="false" />
             <element signature="method#callWeather#0;class#MainActivity#0" expanded="false" />
             <element signature="class#PostDataForMedicalAndDanger#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getTrekkingData#0;class#MainActivity#0" expanded="false" />
-            <marker date="1491072839363" expanded="false" signature="4199:4565" ph="{...}" />
-            <marker date="1491072839363" expanded="false" signature="4797:5163" ph="{...}" />
+            <marker date="1491074069075" expanded="false" signature="4199:4565" ph="{...}" />
+            <marker date="1491074069075" expanded="false" signature="4797:5163" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -4619,17 +4612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-882">
-          <caret line="87" column="36" selection-start-line="87" selection-start-column="29" selection-end-line="87" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/acro/hackathon/trekking/NearByPlacesActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
@@ -4645,16 +4627,27 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="35" column="44" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="44" />
+        <state relative-caret-position="270">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-972">
+          <caret line="87" column="36" selection-start-line="87" selection-start-column="29" selection-end-line="87" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/acro/hackathon/trekking/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="356" column="56" selection-start-line="356" selection-start-column="36" selection-end-line="356" selection-end-column="56" />
+        <state relative-caret-position="296">
+          <caret line="514" column="0" selection-start-line="514" selection-start-column="0" selection-end-line="514" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5893#6114#0" expanded="true" />
@@ -4668,23 +4661,23 @@
             <element signature="method#dismissProgress#0;class#MainActivity#0" expanded="false" />
             <element signature="method#setText#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getUnsafeOkHttpClient#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#14997#15189#0" expanded="true" />
-            <element signature="e#15188#15189#0" expanded="true" />
+            <element signature="e#14988#15180#0" expanded="true" />
+            <element signature="e#15179#15180#0" expanded="true" />
             <element signature="method#weatherData#0;class#MainActivity#0" expanded="false" />
             <element signature="method#mapDirectionData#0;class#MainActivity#0" expanded="false" />
             <element signature="method#callWeather#0;class#MainActivity#0" expanded="false" />
             <element signature="class#PostDataForMedicalAndDanger#0;class#MainActivity#0" expanded="false" />
             <element signature="method#getTrekkingData#0;class#MainActivity#0" expanded="false" />
-            <marker date="1491072839363" expanded="false" signature="4199:4565" ph="{...}" />
-            <marker date="1491072839363" expanded="false" signature="4797:5163" ph="{...}" />
+            <marker date="1491074069075" expanded="false" signature="4199:4565" ph="{...}" />
+            <marker date="1491074069075" expanded="false" signature="4797:5163" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/acro/hackathon/trekking/InstructionActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+        <state relative-caret-position="476">
+          <caret line="43" column="9" selection-start-line="27" selection-start-column="7" selection-end-line="43" selection-end-column="9" />
           <folding />
         </state>
       </provider>
