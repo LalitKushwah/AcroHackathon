@@ -46,13 +46,13 @@
         </activity>
         <activity android:name=".InstructionActivity" />
 
-        <service android:name=".utils.NotificationUtil">
+        <service android:name=".utils.MyMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
-        <activity android:name=".TrekkingActivity"></activity>
+        <activity android:name=".TrekkingActivity"/>
     </application>
 
 </manifest>

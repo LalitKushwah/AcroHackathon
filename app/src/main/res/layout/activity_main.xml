@@ -19,23 +19,26 @@
         android:layout_height="0dp"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_weight="1"
+        android:background="#1ca8f4"
+        android:layout_weight="3"
+        android:layout_marginBottom="4dp"
         android:id="@+id/header">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/weather_loading"
-            android:textColor="#000"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
             android:id="@+id/weatherText" />
         <Button
-            android:layout_width="70dp"
-            android:layout_height="40dp"
-            android:text="More"
-            android:background="@drawable/hollow_blue_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_more_horiz_black_24dp"
             android:onClick="callWeather"/>
 
     </LinearLayout>
 
+<<<<<<< HEAD
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -45,6 +48,9 @@
         android:id="@+id/searchEditText">
 
     </LinearLayout>
+=======
+
+>>>>>>> 8fd238e134721ffb496bd2fd3815478f7c3e8c0c
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -63,7 +69,7 @@
         android:layout_gravity="center_horizontal"
         android:id="@+id/text"
         android:textColor="#000"
-        android:text="@string/near_by"/>
+        android:text="Instructions"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -74,32 +80,39 @@
 
         <ImageButton
             android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="2dp"
-            android:layout_weight="2"
+            android:layout_height="80dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="48dp"
+            android:layout_weight="1.5"
             android:id="@+id/bankBtn"
             android:onClick="onClick"
+            android:scaleType="fitXY"
+            android:padding="4dp"
             android:background="@drawable/hollow_blue_button"
-            android:src="@drawable/ic_business_black_24dp"
+            android:src="@drawable/ic_checklist_and_pencil"
             />
 
         <ImageButton
             android:layout_width="0dp"
-            android:layout_weight="2"
-            android:layout_marginRight="2dp"
+            android:layout_weight="1.5"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="16dp"
             android:onClick="onClick"
+            android:padding="4dp"
             android:id="@+id/hospitalBtn"
             android:background="@drawable/hollow_blue_button"
-            android:src="@drawable/ic_add_box_black_24dp"
-            android:layout_height="40dp" />
+            android:src="@drawable/ic_camping_backpackage"
+            android:layout_height="80dp" />
 
         <ImageButton
             android:layout_width="0dp"
-            android:src="@drawable/ic_local_dining_black_24dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="2dp"
+            android:src="@drawable/ic_tent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="24dp"
             android:id="@+id/eatries"
+            android:scaleType="fitXY"
             android:onClick="onClick"
+            android:padding="4dp"
             android:background="@drawable/hollow_blue_button"
             android:layout_weight="2"
             />
@@ -108,15 +121,6 @@
     </LinearLayout>
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="4dp"
-        android:text="@string/emergency_services"
-        android:textColor="#000"
-        android:layout_weight="1"
-        android:layout_gravity="center_horizontal"
-        android:id="@+id/hiddenText"/>
 
 
     <LinearLayout
@@ -131,9 +135,20 @@
             android:layout_weight="1.4"
             android:text="@string/start_trek"
             android:onClick="callDangerMedical"
+            android:layout_marginTop="8dp"
             android:id="@+id/danger"
+<<<<<<< HEAD
             android:background="@drawable/hollow_red_button"
             android:layout_height="wrap_content" />
+=======
+            android:textColor="#ffffff"
+            android:background="#1ca8f4"
+            android:layout_height="wrap_content" />
+
+
+
+>>>>>>> 8fd238e134721ffb496bd2fd3815478f7c3e8c0c
+
 
     </LinearLayout>
 
