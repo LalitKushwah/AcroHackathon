@@ -12,14 +12,25 @@ import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
-import android.widget.Button;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.acro.hackathon.LocationBaseActivity;
+import com.acro.hackathon.LocationConfiguration;
+import com.acro.hackathon.LocationManager;
+import com.acro.hackathon.constants.FailType;
+import com.acro.hackathon.constants.LogType;
+import com.acro.hackathon.constants.ProviderType;
 import com.acro.hackathon.trekking.POJO.mapDirection.MapDirectionResponse;
+import com.acro.hackathon.trekking.POJO.routes.Feature;
+import com.acro.hackathon.trekking.POJO.routes.Treks;
+import com.acro.hackathon.trekking.POJO.weather.ResponseData;
 import com.acro.hackathon.trekking.network.MapDirectionCalls;
+import com.acro.hackathon.trekking.network.TrekkingRoutes;
+import com.acro.hackathon.trekking.network.WeatherDataInterface;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -28,17 +39,6 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.acro.hackathon.trekking.POJO.weather.ResponseData;
-import com.acro.hackathon.LocationBaseActivity;
-import com.acro.hackathon.LocationConfiguration;
-import com.acro.hackathon.LocationManager;
-import com.acro.hackathon.constants.FailType;
-import com.acro.hackathon.constants.LogType;
-import com.acro.hackathon.constants.ProviderType;
-import com.acro.hackathon.trekking.POJO.routes.Feature;
-import com.acro.hackathon.trekking.POJO.routes.Treks;
-import com.acro.hackathon.trekking.network.TrekkingRoutes;
-import com.acro.hackathon.trekking.network.WeatherDataInterface;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 
@@ -346,10 +346,10 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
                 i2.putExtra("longitude",String.valueOf(longitude));
                 startActivity(i2);*/
                 break;
-            case R.id.accomodation:
+            /*case R.id.accomodation:
                 Intent i3=new Intent(MainActivity.this,InstructionActivity.class);
                 i3.putExtra("type","BaseCamp Information");
-                startActivity(i3);
+                startActivity(i3);*/
 
                 //   Toast.makeText(this, "Accomodation button clicked", Toast.LENGTH_SHORT).show();
                 /*Intent i3=new Intent(MainActivity.this,NearByPlacesActivity.class);
@@ -471,16 +471,18 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
 
 
 
-    /*public void callDangerMedical(View v) {
+    public void callDangerMedical(View v) {
         String mobile,danger,medical;
-        Retrofit retrofit = new Retrofit.Builder()
+        /*Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("http://192.168.0.105:80/")
                 .client(getUnsafeOkHttpClient())
-                .addConverterFactory(GsonConverterFactory.create());
+                .addConverterFactory(GsonConverterFactory.create());*/
 
         switch (v.getId()) {
             case R.id.danger:
-                mobile="74845454";
+                Intent i =new Intent(MainActivity.this,TrekkingActivity.class);
+                startActivity(i);
+                /*mobile="74845454";
                 danger="y";
                 medical="n";
                 DangerMedicalCall service=retrofit.create(DangerMedicalCall.class);
@@ -494,10 +496,10 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
                     public void onFailure(Call<DangerMedicalResponse> call, Throwable t) {
 
                     }
-                });
+                });*/
               break;
             case R.id.medical:
-                mobile="74845454";
+               /* mobile="74845454";
                 danger="n";
                 medical="y";
                 DangerMedicalCall service2=retrofit.create(DangerMedicalCall.class);
@@ -512,11 +514,11 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
                     public void onFailure(Call<DangerMedicalResponse> call, Throwable t) {
 
                     }
-                });
+                });*/
                 break;
         }
 
-    }*/
+    }
     public static class PostDataForMedicalAndDanger {
         String mobile,danger,medical;
         public PostDataForMedicalAndDanger(String mobile,String danger,String medical) {

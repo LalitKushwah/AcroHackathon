@@ -43,13 +43,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".InstructionActivity"></activity>
-        <service
-            android:name=".utils.NotificationUtil">
+        <activity android:name=".InstructionActivity" />
+
+        <service android:name=".utils.NotificationUtil">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
+        <activity android:name=".TrekkingActivity"></activity>
     </application>
 
 </manifest>

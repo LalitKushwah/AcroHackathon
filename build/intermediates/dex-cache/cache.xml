@@ -169,7 +169,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="4210de151ac661d447174c583b98145bc7fb5b4a">
+        sha1="000d749a12c952870e00df3f42c199ed4621bba4">
         <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ab074f37f28dc4be74aee1ed1dd8576bab6062ef/classes.dex" />
     </item>
     <item
@@ -673,7 +673,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="afcded17d5e98aeff8ed81f431a8867740e2723c">
+        sha1="6baac0ee493ccf114d9d32be9a2bd7a4bc1ada4c">
         <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_60ee6cea29211435db1b93b1a7e418f428138e99/classes.dex" />
     </item>
     <item

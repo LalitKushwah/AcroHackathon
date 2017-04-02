@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name" translatable="true">ट्रेक लाइव</string>
+    <string name="weather_loading" translatable="true">मौसम की स्थिति लोड हो रही है ...</string>
+    <string name="search_hint" translatable="true">यहाँ ढूँढे…</string>
+    <string name="near_by" translatable="true">पास ही</string>
+    <string name="emergency_services" translatable="true">आपातकालीन सेवाएं</string>
+    <string name="danger" translatable="true">खतरा</string>
+    <string name="medical" translatable="true">चिकित्सा</string>
+    <string name="name" translatable="true">नाम</string>
+    <string name="navigate">नेविगेट करें</string>
+    <string name="tal_line">क्योंकि हम आपको एक सुरक्षित सुरक्षा प्रदान करते हैं</string>
+    <string-array name="drawer_options">
+        <item>घर</item>
+        <item> प्रोफाइल</item>
+        <item>ट्रेक्स</item>
+        <item>पूर्ण ट्रेक्स</item>
+        <item>संपर्क करें</item>
+        <item>के बारे में</item>
+        <item>लोग आउट</item>
+    </string-array>
+</resources>

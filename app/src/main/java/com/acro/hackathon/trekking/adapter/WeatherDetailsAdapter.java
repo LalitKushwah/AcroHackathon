@@ -27,13 +27,13 @@ public class WeatherDetailsAdapter extends RecyclerView.Adapter<WeatherDetailsAd
     ArrayList<String> daysName=new ArrayList<>();
     public WeatherDetailsAdapter(Context context) {
         this.context=context;
-        daysName.add("Sunday");
         daysName.add("Monday");
         daysName.add("Tuesday");
         daysName.add("Wednesday");
         daysName.add("Thursday");
         daysName.add("Friday");
         daysName.add("Saturday");
+        daysName.add("Sunday");
     }
     @Override
     public TextViews onCreateViewHolder(ViewGroup parent, int viewType) {

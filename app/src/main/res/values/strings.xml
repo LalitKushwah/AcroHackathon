@@ -9,6 +9,8 @@
     <string name="name" translatable="true">Name</string>
     <string name="navigate">Navigate</string>
     <string name="tal_line">BECAUSE WE PROMISE YOU A SAFE ADVENTURE</string>
+    <string name="start_trek">start trek</string>
+    <string name="do_s_and_dont_s">Do\'s and Dont\'s</string>
     <string-array name="drawer_options">
         <item>Home</item>
         <item> Profile</item>

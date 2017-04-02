@@ -17,6 +17,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/imageView"
+            android:src="@drawable/tr1"
+            android:scaleType="centerCrop"
             />
 
     </LinearLayout>
@@ -28,13 +30,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Do's and Dont's"
+                android:text="@string/do_s_and_dont_s"
+                android:textSize="35sp"
+                android:layout_marginTop="8dp"
+                android:textColor="#000"
                 android:id="@+id/title"
                 android:layout_gravity="center_horizontal"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/discription"
+                android:textSize="15sp"
                 android:text="1.Hello this is the first point"/>
 
     </LinearLayout>
