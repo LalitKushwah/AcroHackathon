@@ -26,6 +26,8 @@ import com.google.android.gms.vision.text.Line;
 
 import org.json.JSONObject;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.ArrayList;
 
 import retrofit2.Call;
@@ -127,8 +129,10 @@ public class NearByPlacesActivity extends AppCompatActivity {
                         Math.sin(dLng/2) * Math.sin(dLng/2);
         double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
         Double dist = (Double) (earthRadius * c);
-
-        return dist;
+        Double truncatedDouble = BigDecimal.valueOf(dist)
+                .setScale(2, RoundingMode.HALF_UP)
+                .doubleValue();
+        return truncatedDouble;
     }
 
 
