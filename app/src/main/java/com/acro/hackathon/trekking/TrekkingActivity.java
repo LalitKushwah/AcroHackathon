@@ -1,12 +1,17 @@
 package com.acro.hackathon.trekking;
 
 import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.telephony.TelephonyManager;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.acro.hackathon.trekking.POJO.DangerMedical.DangerMedicalResponse;
 import com.acro.hackathon.trekking.network.DangerMedicalCall;
@@ -31,11 +36,15 @@ import static com.acro.hackathon.trekking.MainActivity.longitude;
 public class TrekkingActivity extends AppCompatActivity implements OnMapReadyCallback {
     GoogleMap mMap;
     Button danger;
+    RadioGroup radioGroup;
+    String emergencyType,mobileNumber;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trekking);
         danger=(Button)findViewById(R.id.danger);
+
+
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -47,12 +56,56 @@ public class TrekkingActivity extends AppCompatActivity implements OnMapReadyCal
             @Override
             public void onClick(View v) {
 
-                Dialog dialog=new Dialog(TrekkingActivity.this);
+                final Dialog dialog=new Dialog(TrekkingActivity.this);
                 dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
                 dialog.setContentView(R.layout.emergency_dialog_item);
+                dialog.getWindow().setLayout(700,485);
                 dialog.show();
 
-                /*Retrofit retrofit = new Retrofit.Builder()
+                Button baseCamp=(Button)dialog.findViewById(R.id.baseCamp);
+
+                baseCamp.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Toast.makeText(TrekkingActivity.this, "Data has been successfully sent.", Toast.LENGTH_SHORT).show();
+                        dialog.dismiss();
+                    }
+                });
+
+
+
+                radioGroup=(RadioGroup)dialog.findViewById(R.id.radioGroup);
+
+                TelephonyManager telemamanger = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
+                String getSimSerialNumber = telemamanger.getSimSerialNumber();
+                Toast.makeText(TrekkingActivity.this, getSimSerialNumber, Toast.LENGTH_SHORT).show();
+
+
+                radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(RadioGroup group, int checkedId) {
+                        if(checkedId==R.id.minorHealth) {
+                            emergencyType="Minor Health";
+                            Toast.makeText(TrekkingActivity.this, "Minor Health", Toast.LENGTH_SHORT).show();
+                        }
+                        if(checkedId==R.id.majorHealth) {
+                            emergencyType="Major Health";
+                            Toast.makeText(TrekkingActivity.this, "Major Health", Toast.LENGTH_SHORT).show();
+                        }
+                        if(checkedId==R.id.equipmentDamage) {
+                            emergencyType=" equipment Need";
+                            Toast.makeText(TrekkingActivity.this, "equipment Need", Toast.LENGTH_SHORT).show();
+                        }
+                        if(checkedId==R.id.stuckInStorm) {
+                            emergencyType="Stuck in storm";
+                            Toast.makeText(TrekkingActivity.this, "Stuck in storm", Toast.LENGTH_SHORT).show();
+                        }
+
+                    }
+                });
+
+                Retrofit retrofit = new Retrofit.Builder()
                         .baseUrl("http://192.168.0.112:80")
                         .client(getUnsafeOkHttpClient())
                         .addConverterFactory(GsonConverterFactory.create())
@@ -70,7 +123,7 @@ public class TrekkingActivity extends AppCompatActivity implements OnMapReadyCal
 
                     }
                 });
-*/
+
 
             }
         });
@@ -85,14 +138,10 @@ public class TrekkingActivity extends AppCompatActivity implements OnMapReadyCal
         Marker laundary = mMap.addMarker(new MarkerOptions().position(indore).title("Your location"));
     }
 
-
-
     public void onClick(View view) {
         switch(view.getId()) {
 
             case R.id.bankBtn:
-
-
                 //   Toast.makeText(this, "Bank button clicked", Toast.LENGTH_SHORT).show();
                 Intent i=new Intent(TrekkingActivity.this,NearByPlacesActivity.class);
                 i.putExtra("type","bank");

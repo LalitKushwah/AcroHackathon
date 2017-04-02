@@ -101,53 +101,6 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
-        /*
-       final DangerMedicalCall service=retrofitObj.create(DangerMedicalCall.class);
-
-        danger=(Button)findViewById(R.id.danger);
-        medical=(Button)findViewById(R.id.medical);
-
-
-
-        danger.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                if (v.getId() == R.id.danger) {
-                    Call<DangerMedicalResponse> responseCall = service.sendDangerMedical("6545665","y","n");
-                    responseCall.enqueue(new Callback<DangerMedicalResponse>() {
-                        @Override
-                        public void onResponse(Call<DangerMedicalResponse> call, Response<DangerMedicalResponse> response) {
-
-                        }
-
-                        @Override
-                        public void onFailure(Call<DangerMedicalResponse> call, Throwable t) {
-
-                        }
-                    });
-                }
-                else {
-                    Call<DangerMedicalResponse> responseCall = service.sendDangerMedical("6545665","y","n");
-                    responseCall.enqueue(new Callback<DangerMedicalResponse>() {
-                        @Override
-                        public void onResponse(Call<DangerMedicalResponse> call, Response<DangerMedicalResponse> response) {
-
-                        }
-
-                        @Override
-                        public void onFailure(Call<DangerMedicalResponse> call, Throwable t) {
-
-                        }
-                    });
-                }
-            }
-
-
-
-        });*/
-
-
         weatherData();
         drawerOptions = getResources().getStringArray(R.array.drawer_options);
         mDrawerLayout = (DrawerLayout)findViewById(R.id.drawer);

@@ -1,5 +1,6 @@
 package com.acro.hackathon.trekking;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -19,20 +20,23 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class IntroActivity extends AppCompatActivity {
 
     ArrayList<String> names;
+    ProgressDialog progressDialog;
     String treks[] = new String[14];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.trek_select_screen);
+        progressDialog=new ProgressDialog(this);
+        progressDialog.setIndeterminate(true);
+        progressDialog.setMessage("Please wait...");
+        progressDialog.show();
         getTrekkingRoutesName();
+
     }
-
-
 
     public void onClick(View view) {
         startActivity(new Intent(IntroActivity.this, MainActivity.class));
     }
-
 
     public void getTrekkingRoutesName(){
         names = new ArrayList<>();
@@ -59,6 +63,8 @@ public class IntroActivity extends AppCompatActivity {
                     Intent i = new Intent(IntroActivity.this, MainActivity.class);
                     i.putStringArrayListExtra("names", names);
                     i.putExtra("treks", treks);
+
+                    progressDialog.dismiss();
                     startActivity(i);
                 }
             }

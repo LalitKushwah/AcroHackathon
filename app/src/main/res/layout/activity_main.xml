@@ -44,9 +44,6 @@
         android:orientation="horizontal"
         android:id="@+id/searchEditText">
 
-
-
-
     </LinearLayout>
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
@@ -137,13 +134,6 @@
             android:id="@+id/danger"
             android:background="@drawable/hollow_red_button"
             android:layout_height="wrap_content" />
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="0.2"
-            android:layout_height="wrap_content" />
-
-
-
 
     </LinearLayout>
 
