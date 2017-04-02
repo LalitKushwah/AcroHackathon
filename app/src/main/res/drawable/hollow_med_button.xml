@@ -6,7 +6,7 @@
             xmlns:android="http://schemas.android.com/apk/res/android">
             <stroke
                 android:width="2dp"
-                android:color="#0969fa"/>
+                android:color="#1ca8f4"/>
             <corners
                 android:radius="7dp" />
             <padding

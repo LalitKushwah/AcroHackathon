@@ -96,7 +96,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
 
 
         retrofit=new Retrofit.Builder()
-                .baseUrl("http://192.168.0.105:80")
+                .baseUrl("http://10.40.0.149:80")
                 .client(getUnsafeOkHttpClient())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
@@ -155,7 +155,6 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         mDrawerList.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, drawerOptions));
         getLocation();
         names = new ArrayList<>();
-        names = getIntent().getStringArrayListExtra("names");
         treks = getIntent().getStringArrayExtra("treks");
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -291,7 +290,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
             break;
             case R.id.eatries:
                 Intent i2=new Intent(MainActivity.this,InstructionActivity.class);
-                i2.putExtra("type","Procedure");
+                i2.putExtra("type","BaseCamp Information");
                 startActivity(i2);
                 break;
         }
@@ -360,7 +359,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
             public void onResponse(Call<ResponseData> call, Response<ResponseData> response) {
 
                 details.clear();
-                weatherText.setText("weather-"+response.body().getList().get(0).getMain().getTemp()+(char) 0x00B0 +"C/"+response.body().getList().get(0).getWeather().get(0).getMain());
+                weatherText.setText(response.body().getList().get(0).getMain().getTemp()+(char) 0x00B0 +"C/"+response.body().getList().get(0).getWeather().get(0).getMain());
                 weatherList.addAll(response.body().getList());
 
                 details.add(response.body().getList().get(0).getMain().getTempMax());
@@ -461,9 +460,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
                             .width(8)
                             .color(Color.RED));
                     }while(i<coordinates.size()-1);
-
-
-                    mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(coordinates.get(0).get(1), coordinates.get(0).get(0)), 9.0f));
+                    mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(coordinates.get(0).get(1), coordinates.get(0).get(0)), 8.2f));
                 }
                 else{
                     Toast.makeText(MainActivity.this, "Network Error", Toast.LENGTH_SHORT).show();

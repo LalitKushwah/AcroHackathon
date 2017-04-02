@@ -3,12 +3,9 @@ package com.acro.hackathon.trekking;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 
 import com.acro.hackathon.trekking.POJO.routes.Treks;
 import com.acro.hackathon.trekking.network.TrekkingRoutes;
-
-import java.util.ArrayList;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -18,7 +15,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class IntroActivity extends AppCompatActivity {
 
-    ArrayList<String> names;
+
     String treks[] = new String[14];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,16 +23,8 @@ public class IntroActivity extends AppCompatActivity {
         setContentView(R.layout.trek_select_screen);
         getTrekkingRoutesName();
     }
-
-
-
-    public void onClick(View view) {
-        startActivity(new Intent(IntroActivity.this, MainActivity.class));
-    }
-
-
     public void getTrekkingRoutesName(){
-        names = new ArrayList<>();
+
 
         Retrofit adapter = new Retrofit.Builder()
                 .baseUrl("http://acrokids-ps11.rhcloud.com/")
@@ -52,17 +41,14 @@ public class IntroActivity extends AppCompatActivity {
             public void onResponse(Call<Treks> call, Response<Treks> response) {
                 if (response.isSuccessful()) {
                     for (int i = 0; i <response.body().getFeatures().size() ; i++) {
-                        names.add(response.body().getFeatures().get(i).getProperties().getName());
                         treks[i] = response.body().getFeatures().get(i).getProperties().getName();
-
                     }
                     Intent i = new Intent(IntroActivity.this, MainActivity.class);
-                    i.putStringArrayListExtra("names", names);
                     i.putExtra("treks", treks);
                     startActivity(i);
+                    finish();
                 }
             }
-
             @Override
             public void onFailure(Call<Treks> call, Throwable t) {
 
