@@ -158,8 +158,6 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         names = getIntent().getStringArrayListExtra("names");
         treks = getIntent().getStringArrayExtra("treks");
 
-
-
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Select a Trek");
         builder.setItems(treks, new DialogInterface.OnClickListener() {
@@ -170,21 +168,7 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         });
         AlertDialog alert = builder.create();
         alert.show();
-
-
-        //TODO : Dialog
-
-
-
-
-
-
     }
-
-
-
-
-
     //Map related stuff
     @Override
     public void onMapReady(GoogleMap googleMap) {
@@ -193,24 +177,10 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(latitude, longitude), 11.0f));
         Marker laundary= mMap.addMarker(new MarkerOptions().position(indore).title("Your location"));
 
-
         mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(latitude, longitude))
                 .title("San Francisco").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
 
-   /*     Circle circle = mMap.addCircle(new CircleOptions()
-                .center(new LatLng(latitude, longitude))
-                .radius(10000)
-                .strokeColor(Color.GRAY)
-                .fillColor(Color.WHITE)); //Inside color
-*/
-
-
-        //TODO : Below is the code to draw line between two GPS coordinates on a map. Use this code to draw Trekking Routes on Map.
-//        Polyline line = mMap.addPolyline(new PolylineOptions()
-//                .add(new LatLng(10.0081428,76.3670165), new LatLng(10.009687, 76.364758))
-//                .width(8)
-//                .color(Color.RED));
     }
 
     @Override
@@ -309,57 +279,21 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
 
     public void onClick(View view) {
         switch(view.getId()) {
-
             case R.id.bankBtn:
                 Intent i=new Intent(MainActivity.this,InstructionActivity.class);
                 i.putExtra("type","Do's and Don'ts");
                 startActivity(i);
-
-             //   Toast.makeText(this, "Bank button clicked", Toast.LENGTH_SHORT).show();
-                /*Intent i=new Intent(MainActivity.this,NearByPlacesActivity.class);
-                i.putExtra("type","bank");
-                i.putExtra("latitude",String.valueOf(latitude));
-                i.putExtra("longitude",String.valueOf(longitude));
-                startActivity(i);*/
             break;
             case R.id.hospitalBtn:
                 Intent i1=new Intent(MainActivity.this,InstructionActivity.class);
                 i1.putExtra("type","Kit");
                 startActivity(i1);
-
-
-             //   Toast.makeText(this, "Hospital button clicked", Toast.LENGTH_SHORT).show();
-               /* Intent i1=new Intent(MainActivity.this,NearByPlacesActivity.class);
-                i1.putExtra("type","hospital");
-                i1.putExtra("latitude",String.valueOf(latitude));
-                i1.putExtra("longitude",String.valueOf(longitude));
-                startActivity(i1);*/
             break;
             case R.id.eatries:
                 Intent i2=new Intent(MainActivity.this,InstructionActivity.class);
                 i2.putExtra("type","Procedure");
                 startActivity(i2);
-            //    Toast.makeText(this, "Eatries button clicked", Toast.LENGTH_SHORT).show();
-                /*Intent i2=new Intent(MainActivity.this,NearByPlacesActivity.class);
-                i2.putExtra("type","eatries");
-                i2.putExtra("latitude",String.valueOf(latitude));
-                i2.putExtra("longitude",String.valueOf(longitude));
-                startActivity(i2);*/
                 break;
-            /*case R.id.accomodation:
-                Intent i3=new Intent(MainActivity.this,InstructionActivity.class);
-                i3.putExtra("type","BaseCamp Information");
-                startActivity(i3);*/
-
-                //   Toast.makeText(this, "Accomodation button clicked", Toast.LENGTH_SHORT).show();
-                /*Intent i3=new Intent(MainActivity.this,NearByPlacesActivity.class);
-                i3.putExtra("type","hotel");
-                i3.putExtra("latitude",String.valueOf(latitude));
-                i3.putExtra("longitude",String.valueOf(longitude));
-                startActivity(i3);
-                break;*/
-
-
         }
 
     }
@@ -473,49 +407,12 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
 
     public void callDangerMedical(View v) {
         String mobile,danger,medical;
-        /*Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.0.105:80/")
-                .client(getUnsafeOkHttpClient())
-                .addConverterFactory(GsonConverterFactory.create());*/
-
-        switch (v.getId()) {
+        switch (v.getId())
+        {
             case R.id.danger:
                 Intent i =new Intent(MainActivity.this,TrekkingActivity.class);
                 startActivity(i);
-                /*mobile="74845454";
-                danger="y";
-                medical="n";
-                DangerMedicalCall service=retrofit.create(DangerMedicalCall.class);
-                Call<DangerMedicalResponse> responseCall=service.sendDangerMedical(new PostDataForMedicalAndDanger(mobile,danger,medical));
-                responseCall.enqueue(new Callback<DangerMedicalResponse>() {
-                    @Override
-                    public void onResponse(Call<DangerMedicalResponse> call, Response<DangerMedicalResponse> response) {
-
-                    }
-                    @Override
-                    public void onFailure(Call<DangerMedicalResponse> call, Throwable t) {
-
-                    }
-                });*/
               break;
-            case R.id.medical:
-               /* mobile="74845454";
-                danger="n";
-                medical="y";
-                DangerMedicalCall service2=retrofit.create(DangerMedicalCall.class);
-                Call<DangerMedicalResponse> responseCall2=service2.sendDangerMedical(new PostDataForMedicalAndDanger(mobile,danger,medical));
-                responseCall2.enqueue(new Callback<DangerMedicalResponse>() {
-                    @Override
-                    public void onResponse(Call<DangerMedicalResponse> call, Response<DangerMedicalResponse> response) {
-
-                    }
-
-                    @Override
-                    public void onFailure(Call<DangerMedicalResponse> call, Throwable t) {
-
-                    }
-                });*/
-                break;
         }
 
     }
@@ -529,41 +426,24 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
 
 
     }
-
-
-
     public void getTrekkingData(int position){
             pos = position;
-
         Retrofit adapter = new Retrofit.Builder()
                 .baseUrl("http://acrokids-ps11.rhcloud.com/")
                 .client(MainActivity.getUnsafeOkHttpClient())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
-
         TrekkingRoutes service = adapter.create(TrekkingRoutes.class);
-
         Call<Treks> response = service.getTrekkingRoutes();
-
         response.enqueue(new Callback<Treks>() {
             @Override
             public void onResponse(Call<Treks> call, Response<Treks> response) {
                 if (response.isSuccessful()) {
-//                    dataset = response.body()
-//                    JSONArray routes = (JSONArray) dataset.get("routes");
-//            JSONObject route = (JSONObject) routes.get(0);
-//            JSONArray coordinates = (JSONArray)route.get("coordinates");
-
                     Treks routes = response.body();
-
                     List<Feature> features = routes.getFeatures();
-
-
-
                     List<List<Double>> coordinates = features.get(pos).getGeometry().getCoordinates();
                         int i=0;
                     do{
-
                         List<Double> data = coordinates.get(i);
                         Double long1 = data.get(0);
                         Double lat1 = data.get(1);
@@ -571,8 +451,6 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
                         data = coordinates.get(i);
                         Double long2 = data.get(0);
                         Double lat2 = data.get(1);
-
-
                         Polyline line = mMap.addPolyline(
                                 new PolylineOptions()
                             .add(new LatLng(
@@ -582,46 +460,15 @@ public class MainActivity extends LocationBaseActivity implements OnMapReadyCall
                                             long2))
                             .width(8)
                             .color(Color.RED));
-
-
-
-
                     }while(i<coordinates.size()-1);
 
 
                     mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(coordinates.get(0).get(1), coordinates.get(0).get(0)), 9.0f));
-
-//            for(int i=0;i<routes.size();i++){
-//
-//            List<String> coordinates = routes.get(i).getCoordinates();
-//
-//
-//
-//
-//                for(int j=0;j<coordinates.size()-1;j++){
-//                    String coord1  =  coordinates.get(j);
-//                    String coord2 =  coordinates.get(j+1);
-//                    String coord1Arr[] = coord1.split("/");
-//                    String coord2Arr[] = coord2.split("/");
-//                    Polyline line = mMap.addPolyline(new PolylineOptions()
-//                            .add(new LatLng(
-//                                    Double.parseDouble(coord1Arr[1].replaceAll("\"","")),
-//                                    Double.parseDouble(coord1Arr[0].replaceAll("\"",""))),
-//                                    new LatLng(Double.parseDouble(coord2Arr[1].replaceAll("\"","")),
-//                                            Double.parseDouble(coord2Arr[0].replaceAll("\"",""))))
-//                            .width(8)
-//
-//
-//                            .color(Color.RED));
-//                }
-//            }
-
                 }
                 else{
                     Toast.makeText(MainActivity.this, "Network Error", Toast.LENGTH_SHORT).show();
                 }
             }
-
             @Override
             public void onFailure(Call<Treks> call, Throwable t) {
                 Log.e("Response ERROR**", "onFailure: "+ t.getLocalizedMessage());

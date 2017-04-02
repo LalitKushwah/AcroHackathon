@@ -3,723 +3,723 @@
 
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="e7157a9577c983651d6c6ee313813424fe2d8ab6">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-10.2.0_272fe2dee0303aee145d3051d9a03e77a76a9b98/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="f83b00041ecfba705603fec40363416c7de69719">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_86af63c4a38e3794c4bd9226b024f4269ffc86db/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="74c5a91d6510ad42410e8a047d90d2ea6721a0e0">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-10.2.0_942233faac5b4006cd243d0aff8191d1ff098e23/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="3d6951cb416ebf8c66a32b9480808ca247b68344">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-10.2.0_ad1d0ad8c5f5dc071dae2f800722dea97084fe09/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Applications/Developer Tools/Android Studio.app/Contents/gradle/m2repository/com/android/tools/build/gradle/3.0/gradle-3.0/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.1.0_d67a61df7eb49332915c10f2c59fea148c79faa0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_90190c6637d6c86ff60734e5c5e19a0e12bd42ba/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Applications/Developer Tools/Android Studio.app/Contents/gradle/m2repository/com/android/tools/build/gradle/3.0/gradle-3.0/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.7_36ef719cc3569979ffe45c028fa8c304e17b50b0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="3d13e510077b35fe8e49930a627dd849ad5da0dc">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-10.2.0_f0159d0340f5f88a5011987f7ff94815cbd1df37/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="75575883f0348fc5d2be85f23bd10b050095cf17">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-10.2.0_a48e01b9e1989120b6600379b086bdfd5dc2f450/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="db48dfabe8ecc46681ceca418d6bd61a5339f818">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-10.2.0_e3396d273c8f0f29c550a299c4942f50906573ca/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_8873f5bedfc1e75469081b5496833659b29990cb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.1_0c01ea5c5cbf4b940eb429982db5b1c7aca0a8cb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="ca82d5800780b1d53f0f9ab43678d8634a34cddc">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-10.2.0_52bfe02f76e2973c44ff4f2a4ca6fc4a1d7b2bd7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="bd75f9f0296fe220da6d0ad961831b04541c4452">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-10.2.0_5c1f76a8fa4b6f4aa4abb1d5a0fca97be36660e4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="6da05b7498da036b5b37c3beb861cd2060929dcd">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-10.2.0_59c48a5a91201cbc762d5aa508a0d634c4c88481/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="ddb7fed808f4331174b59428ccfc46b3696c9812">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-10.2.0_01e7f8864f4005036f3a7e7a5b2d947e7662cc6b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="1df6d719c4e264d66bb98baa5cb637495b8cca66">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-10.2.0_274e0301afe11c220721db69a1b340ac2af627f8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="0f58195bee8a08f35e7d4ee7fd4b0479e570e172">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-crash-10.2.0_c42e498616a381691e748fe65de20b9a419a2a60/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="000d749a12c952870e00df3f42c199ed4621bba4">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ab074f37f28dc4be74aee1ed1dd8576bab6062ef/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Applications/Developer Tools/Android Studio.app/Contents/gradle/m2repository/com/android/tools/build/gradle/3.0/gradle-3.0/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.1/19047bdb6a4fc00a44124f64ca98e88fc204e7e3/okhttp-3.3.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="19047bdb6a4fc00a44124f64ca98e88fc204e7e3">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.3.1_84b1c04cca4f79f7ff1d02c0b1bddd4155fe6a78/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_59804364520f02bda5317187841d6a9229019140/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.1_476660dbee85158bb0aedfb39626f29d2979760a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="3aaf1e7b5fe9f4d3ff22c4edc0ead631f7389d30">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-10.2.0_9af07f5103438f08d08499be03261516c21d1b78/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-appindexing/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="1fbf3733f36fea63e70373212796e70f9079981f">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-appindexing-10.2.0_bf2c909604025f0007619979e16d6be6394ebec2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_39057cf23fc9ec27580da8bdca2f8f3f6347fa6b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="0e301f24b283f14b564f660c9abe863af6be5896">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-10.2.0_6a0e67b160eee838fa777df1de98ee75f3fa958a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.0.1_82ce24b967332a68209bfa98a472533dfc5d458d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="8fd2e9eadc9d214966ee7f60d6c5a17a335d7533">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-framework-10.2.0_ef4dad86c14b4416d5a8c31da34766163f46a0e0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="0d5cbbbfe040201c7569478b70a13b58fd11aab4">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-10.2.0_b5c4cdd61c5d176c1731052adacc70d40fbdc76c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_2939e4a1307da3aa27262203ff5f1648e28f8cef/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-24.0.0_9454459c289afc7a5e273b63a7a24c3dc8cdee34/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-v4-impl/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="8438c64f9eb581429dc592f7c9b3156a3d071653">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-v4-impl-10.2.0_3095d7d6fc6f480d933be41d14f739e347543145/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="1bab75be1918fc9871be4da7afe38d7e4d308303">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-10.2.0_9872484e1d341007eecb6cd411d5d44aadde11b3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.1_343a1485fdf7fef0463070a0060b89a5348e1e3e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="421a5cebe9ff187c98075c59786e9464c5c67d36">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-10.2.0_b936120b1b3644b768427af0f1dcc8eae453463a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="aa23e4589287adb431ef59d6c78af79ab8885682">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-10.2.0_ba9bd9ef9516110779d21c17660b108198af6753/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="654b294d429b56fd18392f2b68ad79954f431f8e">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-10.2.0_a81c12e97b047e5cbcae74d6955a469b04ed025d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.1_87b885aad4fcaf1568fe97655a44d6db3a2577dc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="423fb69e69759d8b726fa4a4fb6a1ea9fc86d1cd">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-instantapps-10.2.0_198b6cc926b0c06b5973e68d43117882c36729fb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/libs/internal_impl-24.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_3fb5d4a87c7991530feead3a733b09c1415c5525/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.1_bb69bddc6703842ca31a9b577df709ae74f30536/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="9d1d0e1270310e34e2d65afda2bc18605c14cd46">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-10.2.0_343b76d7a8f0cc9ef664de66d988888428300096/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="90270132a5f1a33584f453c571257dd35e728201">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-10.2.0_b33f35acb19db7a86444e7ce39694feec91409ff/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="8e1d31656bc9f1889283836e025e6cb703acd38a">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-10.2.0_efe7783f6a8d513728352f6194b75842f50dd7bd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Applications/Developer Tools/Android Studio.app/Contents/gradle/m2repository/com/android/tools/build/gradle/3.0/gradle-3.0/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.3.1/99ce730034c6f5aaed710d1e0e9df95e8714ed5f/logging-interceptor-3.3.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="99ce730034c6f5aaed710d1e0e9df95e8714ed5f">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/logging-interceptor-3.3.1_59e819aaa7640fc9f73d6e4783d2728210d2e4a3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="444f9de23145e8caba7bf1c1772acad142ea6013">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-10.2.0_f507ffa776bd901712a86d93ce6629d357a3cefc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="646b2c48e147b943f0a39842457fdc66d501e4b6">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-10.2.0_25b7603e919b2064683a1bdc8f582170a346e26e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="ea03bbfaed89818f233ee9918fac493f2b63895a">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-10.2.0_62d2f442243e90a89ec88da284c148a7aefc73dd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="db4aca1c1ec60f2c098d3b6c91cedfb7838f83ed">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-10.2.0_1149f0d723a93c5c03e1e8df8ab5625110b35907/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="48532a016bb0dfbe7970c147ce784598a515406b">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-10.2.0_25875c0dbe6af51857bb144d0e14f8574e9303a5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_c86ccfa24a920698e33bc58cc488fb8870421bca/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="a61e7010aa7be5da53cd1bc5279630510c9a4912">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-10.2.0_9b139dbb423adc3f586e804f574184fcb8f5ed4e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="a9493f008850469ed3fab9b28658919562882aed">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-10.2.0_44b1f89358088b45694998466ac30860821da674/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="45e0953544711e0b5a2d227732e88cccb82793bc">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-awareness-10.2.0_2c03c633b8cbc04b96cc5fc3733fcc4bef030cd3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="7d14fe9bd2283b2eb7fcab08458aa0357917e138">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-10.2.0_c4dd8d78aa861d46cae1f933e356129c38fbe91e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/palette-v7/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-palette-v7-24.0.0_a7126bd8efbc2f00eef2672626fdd32c1345f6e4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="b831d3902674d096189451d46fce219e2c2904b7">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-10.2.0_2a8eeade0b9f82abe071e374624be28bbacb10af/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="1ac56e5801e986583cbe27f2cce57f626cc7ff93">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-10.2.0_bc07edc90a8a9ea41610d803ed42d9e93313cb3e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="ce9112e08a027c8620ae693983e38cdbb9f6371b">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-10.2.0_54278193f31e2daff5769a3ee32beac9926bcbbe/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="857ce7350acf811749c8fd0254d3d39b02aa71f5">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-10.2.0_6ffc357642919c25e6383678d5bf36daaa24b33d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Applications/Developer Tools/Android Studio.app/Contents/gradle/m2repository/com/android/tools/build/gradle/3.0/gradle-3.0/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.1.0_964fc9549635866a522b0d9677adf0cf7216bf64/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="3f4483afd050f3be12db7838422309446a45daa1">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-10.2.0_ded6ae9c29d3e99235fa15de9fd758853a9b62a4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="94fca868854457ede6df15c902938468c71d579e">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-10.2.0_06ccec1f0aae3107b74e91482e353ca0d5805c70/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.1_b2391df3a6d76d845c395f75032fd6095c4cad3e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/agency.tango.android/material-intro-screen/0.0.5/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="fb68af9d822e43b656b9dcba16277ffb8792043c">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/agency.tango.android-material-intro-screen-0.0.5_7a43e8d46c6dacea24f2c5ff4e7c45d21723203c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="ab0c7fe28f9506302eb39adf1ebf5858732e18ec">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-10.2.0_f5315348e752ee3967aca6c1bd8c8c42b9826645/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.0.1_be2f9a356c331169d6344ebd079f55e68a209365/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="4e01b82d664e1a8253b2b9658e74b5da35c8771d">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-10.2.0_9ba5ea74235cadd702a019f6b9ff9eba4a945de0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_dd32f8dbce593ad83efbe0e5169483862b6e9238/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="d08bb32b88df3dbcbe1d498c3c57f020b8c521ec">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-10.2.0_56b4b6c8a5fbe2c7303ba7e6797fb761e636ab6a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="68485f21eeb5d6c9ed82c445d520b9fc81c87108">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-10.2.0_f315233f83614b870834e8f30a51d1b0e35480ad/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="4ef2d91da513c4d7e773ae438fe04d0e4c135957">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-10.2.0_3f61a67a59b7df6d2b1b269b3d563a085a39ce44/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.1_27de1b4853112b4f3f5c7427196edaee354b9f08/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/10.2.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="a3f7595ca32e614b454ceb7b7e241bb037a28e86">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-10.2.0_79c9c76c4b4c51dbb1f6da0379907d57cf0c47da/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="6baac0ee493ccf114d9d32be9a2bd7a4bc1ada4c">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_60ee6cea29211435db1b93b1a7e418f428138e99/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Applications/Developer Tools/Android Studio.app/Contents/gradle/m2repository/com/android/tools/build/gradle/3.0/gradle-3.0/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.4.0/f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2/picasso-2.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.4.0_23c1e0d533934db11fc953070103c0846759599f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.2.1/jars/classes.jar"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
         sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-24.2.1_8e5ff79913146f4cb4586bb206994c73bc3a6235/classes.dex" />
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-24.2.1_b6f4da2841da8728504638b73c765ca656945cf1/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_b86af9e466f682f29c1e43fb9b5c75da445f1b80/classes.dex" />
+        sha1="ab0c7fe28f9506302eb39adf1ebf5858732e18ec">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-10.2.0_a8f98333198938b6c355fa34e49a1010e5ef4dd6/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/10.2.0/jars/classes.jar"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/10.2.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="101393e975eaf36e3ff40b277ee9a019e077afef">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-10.2.0_927ce59aac965d9eb43ddf2d37142d20339b546b/classes.dex" />
+        sha1="421a5cebe9ff187c98075c59786e9464c5c67d36">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-10.2.0_d4f2ae7bef8d28d13c2dac55794352af3f437481/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Applications/Developer Tools/Android Studio.app/Contents/gradle/m2repository/com/android/tools/build/gradle/3.0/gradle-3.0/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
+        jar="/home/abc123/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.1.0_4eb367fa41d12162f73562113a076f3ca101f332/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="857ce7350acf811749c8fd0254d3d39b02aa71f5">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-10.2.0_3985256cf3713e716400eccb7b6697f6c6390ce2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="8fc4b5c590371ed89f1977c95290eece6c8d3385">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_f9a26f94c0209f33b20b70a8b2e3836d17bc8e18/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="0f58195bee8a08f35e7d4ee7fd4b0479e570e172">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-crash-10.2.0_445435dfe0c350001cef74329715b46a6be17c5a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_b5ae224122d824e3a248c62385f7c8dee36e86d1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="ea03bbfaed89818f233ee9918fac493f2b63895a">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-10.2.0_ea48bf4823bca0edfda2da1a6817b4ebaf7ef8e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="3f4483afd050f3be12db7838422309446a45daa1">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-10.2.0_4e5d8b490e051698e8cdba7384167c7095a7bc45/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/agency.tango.android/material-intro-screen/0.0.5/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="fb68af9d822e43b656b9dcba16277ffb8792043c">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/agency.tango.android-material-intro-screen-0.0.5_6c8540c7350a616c458d5001712ea695b4e98d61/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="444f9de23145e8caba7bf1c1772acad142ea6013">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-10.2.0_c08ad6f3cf74c557ab6a98ea22ff307255da2fb1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_f61a1e404d4cba76aa8859b53398aa3e018a1d11/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="db4aca1c1ec60f2c098d3b6c91cedfb7838f83ed">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-10.2.0_abd86c0716be84a37cd49d3b13e9e08128a0b449/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="ddb7fed808f4331174b59428ccfc46b3696c9812">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-10.2.0_1589a7200c3e51bd748022f253c7ec8e13d442dd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="1df6d719c4e264d66bb98baa5cb637495b8cca66">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-10.2.0_198417284ebf600c7b7d48242ceb19092a590f85/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="423fb69e69759d8b726fa4a4fb6a1ea9fc86d1cd">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-instantapps-10.2.0_4e3f3255f605b69083ca86a54c30a043188fada3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/palette-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-palette-v7-24.0.0_d983e2497b1feef1efa9dc978dd4eadfdc47a0cb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.0.1_e52c44b8490b38d97c6cabb6addce5700f743cbc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_58ddfb64e6774f717b754b833c86a923f8cf3de0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
         sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
-        <dex dex="/Users/ps11/Documents/Projects/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.8.0_d29b7c43ea5bbd1d4759e57306ea6aa6150e466e/classes.dex" />
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.8.0_0fe95b2bb85fb16d7586e1319027671c00f6ff5e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-24.0.0_ee3eee1d6fc55e629a63127d5eb59a18df1302e6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="0e301f24b283f14b564f660c9abe863af6be5896">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-10.2.0_8aaf995631b99a44c61fa4993ca2ed2cc9c57ddc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="68485f21eeb5d6c9ed82c445d520b9fc81c87108">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-10.2.0_331bf6c9e18810ba1e33aa93711f8776687c6541/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="1ac56e5801e986583cbe27f2cce57f626cc7ff93">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-10.2.0_5a795d4451c592fbc947363997fb76527eb25a40/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_fc9c67e14eff50f922e66be0aa5c087065675370/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="a61e7010aa7be5da53cd1bc5279630510c9a4912">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-10.2.0_5572d34e1cfbc09fe44f4dcde32fd07107a5a420/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="0d5cbbbfe040201c7569478b70a13b58fd11aab4">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-10.2.0_15a72e2465ce3b5a5b5eb24b69142f1a432f62c9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_bc73c432ce416c57879098c3cfd799317ff99d03/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.1_f96862b6b5aa780f1f6fdf4dbb87652bc0062431/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_814919ff8d5e2a7b74b1c9448bc6e99887c1bdce/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="9d1d0e1270310e34e2d65afda2bc18605c14cd46">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-10.2.0_dad315ae74a83ccbb276634701ee42b30dd225b9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d40a5e0e57727a3ae519509cc72853f03bfa9b56">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_ffd3332a882f1eb172b4809552db90c636108f72/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="4ef2d91da513c4d7e773ae438fe04d0e4c135957">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-10.2.0_b37bad54b4ca93840eee1705a65446bc455f0baa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="1bab75be1918fc9871be4da7afe38d7e4d308303">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-10.2.0_e5561054f0a3dc17f52b844add15d9ba42805b46/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="3d13e510077b35fe8e49930a627dd849ad5da0dc">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-10.2.0_81dc047693da59af808276f4d37f7eb820dd6ba9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_b3f0a336a78c119cf5be2c3ee818555b1c5996c7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.1.0_f1213dbe48a3854daaf5144f00e71aecb8979c82/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.1_50f28836ff1925b72af05c507296276bd25afe98/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="48532a016bb0dfbe7970c147ce784598a515406b">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-10.2.0_226a94de50456a0ba366df54b375858ebed2fef4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.1_b72a340e65dc9f044319d5a5c257641689e9a41f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.0.1_6160f32ea07d6c9916f9bc4de934b4a2f7c2fb56/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d08bb32b88df3dbcbe1d498c3c57f020b8c521ec">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-10.2.0_bf16a9372d96ffb977f51581c1404ce4e8c1d703/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.1_d1ec4a1ef93a892d8f18200ad4c0994d60102b70/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.1/19047bdb6a4fc00a44124f64ca98e88fc204e7e3/okhttp-3.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="19047bdb6a4fc00a44124f64ca98e88fc204e7e3">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.3.1_81d73f39d933dcee83e0ef2b0ba2704d4e7b9f21/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="aa23e4589287adb431ef59d6c78af79ab8885682">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-10.2.0_6230989fade29a0dc9c357e02ad1f0f879ea14e9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="8fd2e9eadc9d214966ee7f60d6c5a17a335d7533">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-framework-10.2.0_706234b09d2057094d72e330276dc8cbcaa7752f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.4.0/f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2/picasso-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.4.0_ab7541d3872140639451e3af00fa2d67e54d3e99/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="b831d3902674d096189451d46fce219e2c2904b7">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-10.2.0_7f299adaf669be9703615d42eca276feac5ea109/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="94fca868854457ede6df15c902938468c71d579e">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-10.2.0_d697a94842705ec722e35949863ebe876de68d0e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7d14fe9bd2283b2eb7fcab08458aa0357917e138">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-10.2.0_7b6157c5aa71cc0e2fd1a129d5bf7de52eb5d859/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.3.1/99ce730034c6f5aaed710d1e0e9df95e8714ed5f/logging-interceptor-3.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="99ce730034c6f5aaed710d1e0e9df95e8714ed5f">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/logging-interceptor-3.3.1_641634ea34c06f7aff5ee2d7c143846a989f1894/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.1_57493e9ec25c7921bee258d0fd314116a3d5acbe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.1_0291da23cffe02b771aee2cd53dfe19b472bab5c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="8e1d31656bc9f1889283836e025e6cb703acd38a">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-10.2.0_af44c5f97390bc6f7ededcb94954830a5a6967bb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="e7157a9577c983651d6c6ee313813424fe2d8ab6">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-10.2.0_a2c515445baff1dff6f5d3190b28cfd966568efc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="45e0953544711e0b5a2d227732e88cccb82793bc">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-awareness-10.2.0_d54a6e1dbfc368634ce8987624210144c935ba79/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="646b2c48e147b943f0a39842457fdc66d501e4b6">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-10.2.0_ec85a82cf2a843fb4e582ba3be2e3a135f8ab501/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="a3f7595ca32e614b454ceb7b7e241bb037a28e86">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-10.2.0_0d3f86f57e3f07534480bd38e55d46dee01a3b6f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="90270132a5f1a33584f453c571257dd35e728201">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-10.2.0_1ce1b611313ad0b3a507ee5c572a4a77476bd92a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="3d6951cb416ebf8c66a32b9480808ca247b68344">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-10.2.0_82bd922b1afeeda2af85256cb24cf5e921b08625/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="4e01b82d664e1a8253b2b9658e74b5da35c8771d">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-10.2.0_315b637de1a1134f73169ff2290a6c7c3371431a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="6da05b7498da036b5b37c3beb861cd2060929dcd">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-10.2.0_86a2fb9e3d2c04c1a06e51dacf9dd4c823520a63/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.1_ae2fd38ab5e88443fcafce3b1c79dafc49ecb46d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="db48dfabe8ecc46681ceca418d6bd61a5339f818">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-10.2.0_27631204ec6ee9070a72bc1cb6aaa85254be22b2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.7_9f6c03fee2a2d7c7d8e773b60878997ab3de6e44/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="bd75f9f0296fe220da6d0ad961831b04541c4452">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-10.2.0_129d7bab0b1bf1a38e681dcc2c4a54fb2db7b5af/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="ce9112e08a027c8620ae693983e38cdbb9f6371b">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-10.2.0_7dcad99fa43792a974bb88a3ef43eda23ba73e58/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="a9493f008850469ed3fab9b28658919562882aed">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-10.2.0_b3ce65abf7b1003b8f8f6ecba5338fd0a89c2a60/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="3aaf1e7b5fe9f4d3ff22c4edc0ead631f7389d30">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-10.2.0_5659621b5ab4e0fa3ef48979b6794a80190f4c11/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="75575883f0348fc5d2be85f23bd10b050095cf17">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-10.2.0_ef3ed0f1dcf810e8cef3a14ed861dcffbde73e4b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_9912c43717ce8ef3b03ae8197081f990d68f9e0d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_04f8be96ece5b067bf4de942e3511c1b304c7f44/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="101393e975eaf36e3ff40b277ee9a019e077afef">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-10.2.0_dc73b142eaec369f6a3831d215f7367c50eb1ab2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-appindexing/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="1fbf3733f36fea63e70373212796e70f9079981f">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-appindexing-10.2.0_f3eaf71da5d06040cf7ec09131b4f19d62d26f22/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="ca82d5800780b1d53f0f9ab43678d8634a34cddc">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-10.2.0_4a6e7242ac066d0e633da819b76b30f16bdf7561/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="654b294d429b56fd18392f2b68ad79954f431f8e">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-10.2.0_9f7269bccd61a9024cb480fee9f03842e09b705a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="74c5a91d6510ad42410e8a047d90d2ea6721a0e0">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-10.2.0_2cb85ddd60370c509d30b11c17d18e3237837d6a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-v4-impl/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="8438c64f9eb581429dc592f7c9b3156a3d071653">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-v4-impl-10.2.0_0988a68913645a6b0e711230561a43382e3cdb78/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/home/abc123/Desktop/FinalProject/AcroHackathon/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_8ac6d57413244dfd8d18b1c114e8921b0bc187ad/classes.dex" />
     </item>
 
 </items>

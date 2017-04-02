@@ -4,7 +4,7 @@
     <string name="search_hint" translatable="true">Search Here…</string>
     <string name="near_by" translatable="true">Near By</string>
     <string name="emergency_services" translatable="true">Emergency services</string>
-    <string name="danger" translatable="true">Danger</string>
+    <string name="danger" translatable="true">Emergency Services</string>
     <string name="medical" translatable="true">Medical</string>
     <string name="name" translatable="true">Name</string>
     <string name="navigate">Navigate</string>
